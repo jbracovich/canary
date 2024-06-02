@@ -584,7 +584,7 @@ void Player::updateInventoryImbuement() {
 			// Imbuement from imbuementInfo, this variable reduces code complexity
 			auto imbuement = imbuementInfo.imbuement;
 			// Get the category of the imbuement
-			const CategoryImbuement* categoryImbuement = g_imbuements().getCategoryByID(imbuement->getCategory());
+			const auto &categoryImbuement = g_imbuements().getCategoryByID(imbuement->getCategory());
 			// Parent of the imbued item
 			auto parent = item->getParent();
 			bool isInBackpack = parent && parent->getContainer();
@@ -1454,7 +1454,7 @@ void Player::sendHouseWindow(std::shared_ptr<House> house, uint32_t listId) cons
 	}
 }
 
-void Player::onApplyImbuement(Imbuement* imbuement, std::shared_ptr<Item> item, uint8_t slot, bool protectionCharm) {
+void Player::onApplyImbuement(std::shared_ptr<Imbuement> imbuement, std::shared_ptr<Item> item, uint8_t slot, bool protectionCharm) {
 	if (!imbuement || !item) {
 		return;
 	}
@@ -1475,7 +1475,7 @@ void Player::onApplyImbuement(Imbuement* imbuement, std::shared_ptr<Item> item, 
 		}
 	}
 
-	const BaseImbuement* baseImbuement = g_imbuements().getBaseByID(imbuement->getBaseID());
+	const auto &baseImbuement = g_imbuements().getBaseByID(imbuement->getBaseID());
 	if (!baseImbuement) {
 		return;
 	}
@@ -1542,7 +1542,7 @@ void Player::onClearImbuement(std::shared_ptr<Item> item, uint8_t slot) {
 		return;
 	}
 
-	const BaseImbuement* baseImbuement = g_imbuements().getBaseByID(imbuementInfo.imbuement->getBaseID());
+	const auto &baseImbuement = g_imbuements().getBaseByID(imbuementInfo.imbuement->getBaseID());
 	if (!baseImbuement) {
 		return;
 	}
@@ -6335,7 +6335,7 @@ uint16_t Player::getFreeBackpackSlots() const {
 	return counter;
 }
 
-void Player::addItemImbuementStats(const Imbuement* imbuement) {
+void Player::addItemImbuementStats(const std::shared_ptr<Imbuement> imbuement) {
 	bool requestUpdate = false;
 	// Check imbuement skills
 	for (int32_t skill = SKILL_FIRST; skill <= SKILL_LAST; ++skill) {
@@ -6370,7 +6370,7 @@ void Player::addItemImbuementStats(const Imbuement* imbuement) {
 	}
 }
 
-void Player::removeItemImbuementStats(const Imbuement* imbuement) {
+void Player::removeItemImbuementStats(const std::shared_ptr<Imbuement> imbuement) {
 	if (!imbuement) {
 		return;
 	}
