@@ -12,6 +12,7 @@ local exitDestination = {
 	{ x = 32213, y = 31132, z = 8 }, --Svargrond
 	{ x = 32786, y = 31245, z = 5 }, --Yalahar
 	{ x = 33594, y = 31899, z = 4 }, --Oramond
+	{ x = 1055, y = 1040, z = 6 }, --Vip Draconia
 }
 local exitFlamesPos = {
 	{ x = 32191, y = 31419, z = 2 }, --ice

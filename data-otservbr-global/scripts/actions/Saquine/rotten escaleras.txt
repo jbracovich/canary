@@ -1,0 +1,32 @@
+</item>
+    <item id="42397" article="a" name="ramp">
+        <attribute key="floorchange" value="south"/>
+    </item>
+    <item id="42391" article="a" name="ramp">
+        <attribute key="floorchange" value="north"/>
+    </item>
+    <item id="42393" article="a" name="ramp">
+        <attribute key="floorchange" value="west"/>
+    </item>
+    <item id="42395" article="a" name="ramp">
+        <attribute key="floorchange" value="east"/>
+    </item>
+    <item id="42965" article="a" name="ramp">
+        <attribute key="floorchange" value="north"/>
+    </item>
+    <item id="42971" article="a" name="ramp">
+        <attribute key="floorchange" value="south"/>
+    </item>
+    <item id="42967" article="a" name="ramp">
+        <attribute key="floorchange" value="west"/>
+    </item>
+    <item id="42969" article="a" name="ramp">
+        <attribute key="floorchange" value="east"/>
+    </item>
+    <item id="42745" article="an" name="open door">
+        <attribute key="type" value="door"/>
+    </item>
+    <item id="42744" article="a" name="closed door">
+        <attribute key="type" value="door"/>
+        <attribute key="blockProjectile" value="1"/>
+    </item>

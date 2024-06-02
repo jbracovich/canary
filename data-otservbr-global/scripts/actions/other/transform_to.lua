@@ -460,6 +460,9 @@ local transformItems = {
 	[42349] = 42348, -- opulent floor lamp
 	[42363] = 42364, -- djinn lamp
 	[42365] = 42366, -- djinn lamp
+	[44855] = 44856, 
+	[44857] = 44858, -- flowering log
+	[44858] = 44855, -- flowering log
 }
 
 local transformTo = Action()

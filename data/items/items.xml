@@ -8139,9 +8139,14 @@
 			<attribute key="slot" value="ring"/>
 		</attribute>
 	</item>
-	<item id="3246" name="boots of waterwalking">
-		<attribute key="description" value="(This item has 5 charges left)"/>
+	<item id="3246" name="Draconia Boots">
+		<attribute key="description" value="(Fast Regeneration, Speed+50)"/>
 		<attribute key="weight" value="770"/>
+		<attribute key="manaticks" value="1000"/>
+		<attribute key="managain" value="60"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="60"/>
+		<attribute key="speed" value="50"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
 		</attribute>
@@ -8566,7 +8571,7 @@
 			<attribute key="life leech" value="3"/>
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
+			<attribute key="vibrancy" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="80"/>
@@ -27992,7 +27997,7 @@
 	<item fromid="11276" toid="11278" article="a" name="earth shrine">
 		<attribute key="primarytype" value="shrines and altars"/>
 	</item>
-	<item fromid="11279" toid="11309" article="a" name="unknown item"/>
+	<item fromid="11279" toid="11309" article="a" name="earth shrine"/>
 	<item id="11310" article="a" name="unknown item"/>
 	<item fromid="11311" toid="11315" article="a" name="watchguard"/>
 	<item id="11316" article="a" name="wooden floor">
@@ -45714,17 +45719,17 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item fromid="23111" toid="23113" name="rift floor">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
-	<item id="23114" name="unknown item"/>
+	<item id="23114" name="unknown"/>
 	<item fromid="23115" toid="23118" name="RESERVED SPRITE"/>
-	<item id="23119" name="unknown item"/>
+	<item id="23119" name="unknown"/>
 	<item fromid="23120" toid="23123" name="RESERVED SPRITE"/>
-	<item id="23124" name="unknown item"/>
+	<item id="23124" name="unknown"/>
 	<item fromid="23125" toid="23128" name="RESERVED SPRITE"/>
-	<item id="23129" name="unknown item"/>
+	<item id="23129" name="unknown"/>
 	<item fromid="23130" toid="23133" name="RESERVED SPRITE"/>
-	<item id="23134" name="unknown item"/>
+	<item id="23134" name="unknown"/>
 	<item fromid="23135" toid="23138" name="RESERVED SPRITE"/>
-	<item id="23139" name="unknown item"/>
+	<item id="23139" name="unknown"/>
 	<item id="23140" name="crater"/>
 	<item fromid="23141" toid="23143" name="RESERVED SPRITE"/>
 	<item fromid="23144" toid="23153" name="rift wall"/>
@@ -54676,6 +54681,10 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
+		<item id="28827" article="a" name="Reward Chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="8"/>
+	</item>
 	<item id="28830" article="an" name="energized demonbone">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="absorbpercentenergy" value="3"/>
@@ -55025,9 +55034,9 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	</item>
 	<item fromid="28949" toid="28950" name="RESERVED SPRITE"/>
 	<item id="28951" article="a" name="focus of corrupted nature"/>
-	<item id="28952" name="unknown item"/>
+	<item id="28952" name="Moss"/>
 	<item fromid="28953" toid="28963" name="RESERVED SPRITE"/>
-	<item fromid="28964" toid="28975" name="unknown item"/>
+	<item fromid="28964" toid="28975" name="Moss"/>
 	<item id="28976" name="unknown item"/>
 	<item fromid="28977" toid="28987" name="RESERVED SPRITE"/>
 	<item fromid="28988" toid="28999" name="unknown item"/>
@@ -62030,7 +62039,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item id="32767" article="a" name="unknown">
 		<attribute key="weight" value="500"/>
 	</item>
-	<item id="32768" article="a" name="unknown">
+	<item id="32768" article="a" name="sandtimer">
 		<attribute key="weight" value="500"/>
 	</item>
 	<item id="32769" article="a" name="white gem">
@@ -62474,6 +62483,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="type" value="teleport"/>
 		<attribute key="effect" value="teleport"/>
 	</item>
+	<item fromid="33018" toid="33025" name="shrine" editorsuffix="(soul war quest)"/>
 	<item fromid="33026" toid="33027" name="heart lamp">
 		<attribute key="primarytype" value="light sources"/>
 		<attribute key="wrapableto" value="23398"/>
@@ -63064,6 +63074,10 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="decayTo" value="33824"/>
 		<attribute key="containersize" value="48"/>
 	</item>
+	<item id="33854" article="the" name="blood of cloak of Terror">
+		<attribute key="duration" value="50"/>
+		<attribute key="decayTo" value="34006"/>
+	</item>
 	<item id="33856" article="a" name="dead goshnar's cruelty">
 		<attribute key="duration" value="600"/>
 		<attribute key="decayTo" value="0"/>
@@ -63159,6 +63173,11 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="decayTo" value="33874"/>
 		<attribute key="containersize" value="48"/>
 	</item>
+	<item id="33876" article="a" name="dead weeping soul">
+		<attribute key="duration" value="300"/>
+		<attribute key="decayTo" value="0"/>
+	</item>
+	<item id="33877" article="a" name="searing fire"/>
 	<item id="33886" article="a" name="dead goshnars megalomania">
 		<attribute key="duration" value="600"/>
 		<attribute key="decayTo" value="0"/>
@@ -63178,6 +63197,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="decayTo" value="33888"/>
 		<attribute key="containersize" value="48"/>
 	</item>
+	<item id="33890" article="a" name="greedy maw"/>
 	<item id="33891" article="a" name="some mortal essence"/>
 	<item id="33892" name="love elixir">
 		<attribute key="primarytype" value="fansite items"/>
@@ -63377,6 +63397,10 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="description" value="A goblin zombie is stuffed into it"/>
 		<attribute key="weight" value="5500"/>
 	</item>
+	<item id="33949" name="dead aspect of power">
+		<attribute key="duration" value="300"/>
+		<attribute key="decayTo" value="0"/>
+	</item>
 	<item id="33950" name="cleansed sanity">
 		<attribute key="description" value="Can be used to douse Goshnar's madness"/>
 		<attribute key="weight" value="101"/>
@@ -63522,6 +63546,19 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	</item>
 	<item id="33982" name="crawler's essence" plural="crawler's essences">
 		<attribute key="weight" value="45"/>
+	</item>
+	<item id="33984" article="a" name="necromantic remains">
+		<attribute key="duration" value="300"/>
+		<attribute key="decayTo" value="0"/>
+	</item>
+	<item id="34005" name="pulsating energy"/>
+	<item id="34006" article="the" name="blood of cloak of Terror">
+		<attribute key="duration" value="30"/>
+		<attribute key="decayTo" value="34007"/>
+	</item>
+	<item id="34007" article="the" name="blood of cloak of Terror">
+		<attribute key="duration" value="10"/>
+		<attribute key="decayTo" value="0"/>
 	</item>
 	<item id="34008" name="white silk flower">
 		<attribute key="primarytype" value="plants and herbs"/>
@@ -67857,9 +67894,9 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="description" value="Drinking this potion temporarily increases critical hit chance"/>
 		<attribute key="weight" value="210"/>
 	</item>
-	<item id="36725" name="stamina extension">
+	<item id="36725" name="Small Stamina Refill">
 		<attribute key="primarytype" value="liquids"/>
-		<attribute key="description" value="Drinking this potion fills up stamina by one hour"/>
+		<attribute key="description" value="Drinking this potion fills stamina and recharges twelve hours."/>
 		<attribute key="weight" value="210"/>
 	</item>
 	<item id="36726" article="a" name="charm upgrade">
@@ -69121,6 +69158,10 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<item fromid="37115" toid="37159" article="an" name="exaltation forge">
 		<attribute key="primarytype" value="constructions"/>
+	</item>
+		<item id="37160" article="a" name="Dusts" plural="Dusts">
+		<attribute key="description" value="This item Aument your Dusts"/>
+		<attribute key="weight" value="10"/>
 	</item>
 	<item id="37161" article="a" name="bronze cup" plural="bronze cups">
 		<attribute key="primarytype" value="tournament rewards"/>
@@ -74748,6 +74789,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="transformOnUse" value="42367"/>
 		<attribute key="wrapableto" value="23398"/>
 	</item>
+	<item fromid="42582" toid="42608" article="a" name="ornamented wall">
+		<attribute key="primarytype" value="walls"/>
+	</item>
 	<item id="42619" name="stairs">
 		<attribute key="floorchange" value="north"/>
 	</item>
@@ -75748,6 +75792,11 @@ Granted by TibiaGoals.com"/>
 		<attribute key="charges" value="14400"/>
 		<attribute key="weight" value="1000"/>
 	</item>
+	<item id="44563" article="an" name="ominous trashcan">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+	</item>
+	<item id="44598" name="Some Ghost Dust" />
 	<item id="44602" article="a" name="lesser guardian gem" plural="lesser guardian gems">
 		<attribute key="description" value="Shines with the strength of knights" />
 		<attribute key="loottype" value="valuable" />
@@ -75820,5 +75869,483 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="valuables" />
 		<attribute key="weight" value="120" />
 	</item>
+    <item id="42397" article="a" name="ramp">
+        <attribute key="floorchange" value="south"/>
+    </item>
+    <item id="42391" article="a" name="ramp">
+        <attribute key="floorchange" value="north"/>
+    </item>
+    <item id="42393" article="a" name="ramp">
+        <attribute key="floorchange" value="west"/>
+    </item>
+    <item id="42395" article="a" name="ramp">
+        <attribute key="floorchange" value="east"/>
+    </item>
+    <item id="42965" article="a" name="ramp">
+        <attribute key="floorchange" value="north"/>
+    </item>
+    <item id="42971" article="a" name="ramp">
+        <attribute key="floorchange" value="south"/>
+    </item>
+    <item id="42967" article="a" name="ramp">
+        <attribute key="floorchange" value="west"/>
+    </item>
+    <item id="42969" article="a" name="ramp">
+        <attribute key="floorchange" value="east"/>
+    </item>
+    <item id="42745" article="an" name="open door">
+        <attribute key="type" value="door"/>
+    </item>
+    <item id="42744" article="a" name="closed door">
+        <attribute key="type" value="door"/>
+        <attribute key="blockProjectile" value="1"/>
+	</item>
+	<item id="44619" name="stoic iks cuirass">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="15"/>
+		<attribute key="magiclevelpoints" value="4"/>
+		<attribute key="absorbpercentdeath" value="5"/>
+		<attribute key="weight" value="4400"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="wrath of nature" value="strong impact" />
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="44620" name="stoic iks chestplate">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="16"/>
+		<attribute key="skillshield" value="3"/>
+		<attribute key="absorbpercentphysical" value="8"/>
+		<attribute key="weight" value="14200"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="intense wound cleansing" value="cooldown">
+				<attribute key="value" value="120000" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="44621" article="a" name="dauntless dragon scale armor">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="18"/>
+		<attribute key="skillaxe" value="3"/>
+		<attribute key="skillsword" value="3"/>
+		<attribute key="skillclub" value="3"/>
+		<attribute key="absorbpercentphysical" value="8"/>
+		<attribute key="weight" value="15200"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="front sweep" value="life leech">
+				<attribute key="value" value="4" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="300"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="44622" article="an" name="unerring dragon scale armor">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="17"/>
+		<attribute key="skilldist" value="3"/>
+		<attribute key="holymagiclevelpoints" value="1"/>
+		<attribute key="absorbpercentenergy" value="10"/>
+		<attribute key="absorbpercentearth" value="-5"/>
+		<attribute key="weight" value="13500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="strong ethereal spear" value="life leech">
+				<attribute key="value" value="4" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="300"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="44623" article="an" name="arcane dragon robe">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="15"/>
+		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="absorbpercentfire" value="-6"/>
+		<attribute key="absorbpercentice" value="12"/>
+		<attribute key="weight" value="4300"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="energy wave" value="life leech">
+				<attribute key="value" value="5" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="300"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="44624" article="an" name="arcane dragon robe">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="15"/>
+		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="earthmagiclevelpoints" value="1"/>
+		<attribute key="absorbpercentice" value="-6"/>
+		<attribute key="absorbpercentfire" value="12"/>
+		<attribute key="weight" value="3800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="terra wave" value="life leech">
+				<attribute key="value" value="3" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="300"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="44636" name="stoic iks casque">
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="8"/>
+		<attribute key="skilldist" value="2"/>
+		<attribute key="absorbpercentphysical" value="3"/>
+		<attribute key="absorbpercentenergy" value="6"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+			<attribute key="skillboost magic level" value="2"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="divine missile" value="strong impact" />
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="44637" name="stoic iks headpiece">
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="8"/>
+		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="absorbpercentdeath" value="3"/>
+		<attribute key="weight" value="2100"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+			<attribute key="skillboost magic level" value="2"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="wrath of nature" value="critical extra damage">
+				<attribute key="value" value="5" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="44642" name="stoic iks culet">
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="9"/>
+		<attribute key="skillaxe" value="2"/>
+		<attribute key="skillsword" value="2"/>
+		<attribute key="skillclub" value="2"/>
+		<attribute key="absorbpercentphysical" value="4"/>
+		<attribute key="absorbpercentenergy" value="2"/>
+		<attribute key="weight" value="5100"/>
+		<attribute key="augments" value="1">
+			<attribute key="intense wound cleansing" value="strong impact" />
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="44643" name="stoic iks faulds">
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="8"/>
+		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="absorbpercentfire" value="6"/>
+		<attribute key="weight" value="3400"/>
+		<attribute key="augments" value="1">
+			<attribute key="great energy beam" value="increased damage" />
+			<attribute key="great death beam" value="increased damage" />
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="44648" name="stoic iks boots">
+		<attribute key="primarytype" value="boots"/>
+		<attribute key="speed" value="15"/>
+		<attribute key="armor" value="2"/>
+		<attribute key="skilldist" value="1"/>
+		<attribute key="weight" value="1500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase speed" value="10"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="divine missile" value="critical extra damage">
+				<attribute key="value" value="5" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="44649" name="stoic iks sandals">
+		<attribute key="primarytype" value="boots"/>
+		<attribute key="armor" value="2"/>
+		<attribute key="magiclevelpoints" value="1"/>
+		<attribute key="absorbpercentice" value="6"/>
+		<attribute key="weight" value="900"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase speed" value="10"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="great energy beam" value="critical extra damage">
+				<attribute key="value" value="5" />
+			</attribute>
+			<attribute key="great death beam" value="critical extra damage">
+				<attribute key="value" value="5" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="250"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+		<item id="45527" name="flowering log">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="description" value="You can sense the fluttering of small wings inside the hollow trunk"/>
+	    </item>
+		<item id="45528" name="flowering log">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="decayTo" value="44857"/>
+		<attribute key="duration" value="6"/>
+	    </item>
+		<item id="45529" name="blue butterfly">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="description" value="It is drinking nectar from one of the flowers"/>
+		</item>
+		<item id="45530" name="flowering log">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="duration" value="3"/>
+		<attribute key="decayTo" value="44855"/>
+	    </item>
+		<item id="45531" article="a" name="alicorn backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+		</item>
+		<item id="45532" article="a" name="arboreal backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+		</item>
+		<item id="45533" article="a" name="arcanomancer backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+		</item>
+		<item id="45534" article="a" name="sanguine backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+		</item>
+		<item id="45535" article="a" name="spiritthorn backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+		</item>
+		<item id="45536" article="a" name="suncrest backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
+		<item id="45537" article="a" name="voidwalker backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
+		<item id="45538" article="a" name="soul war backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
+		<item id="44867" article="a" name="angels backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
+	<item id="45539" name="stamina refill">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="Drinking this potion to completely fill your stamina."/>
+		<attribute key="weight" value="45"/>
+	</item>
+		<item id="45540" name="remove skulls">
+		<attribute key="description" value="This item remove all Skulls."/>
+		<attribute key="weight" value="25"/>
+	</item>
+	<item id="45541" article="a" name="magic forcefield">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="effect" value="teleport"/>
+	</item>
+		<item id="45542" article="a" name="roulet coin">
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="44753" article="a" name="heralds insignia">
+        <attribute key="description" value="The insignia of the Draccoons herald!" />
+        <attribute key="loottype" value="valuable" />
+        <attribute key="primarytype" value="valuables" />
+        <attribute key="weight" value="1250" />
+    </item>
+    <item id="44754" article="a" name="heralds wings">
+        <attribute key="description" value="The wings of the Draccoons herald!" />
+        <attribute key="loottype" value="valuable" />
+        <attribute key="primarytype" value="valuables" />
+        <attribute key="weight" value="1250" />
+    </item>
+    <item id="44750" article="a" name="exalted seal">
+        <attribute key="description" value="The exhalted seal of Nimmersatt." />
+        <attribute key="loottype" value="valuable" />
+        <attribute key="primarytype" value="valuables" />
+        <attribute key="weight" value="20" />
+    </item>
 </items>
 

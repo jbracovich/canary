@@ -14,6 +14,7 @@ Concoction.__index = Concoction
 Concoction.Ids = {
 	KooldownAid = Concoction_KooldownAid,
 	StaminaExtension = Concoction_StaminaExtension,
+	StaminaRefill = Concoction_StaminaRefill,
 	StrikeEnhancement = Concoction_StrikeEnhancement,
 	CharmUpgrade = Concoction_CharmUpgrade,
 	WealthDuplex = Concoction_WealthDuplex,

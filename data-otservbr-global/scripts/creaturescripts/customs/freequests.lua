@@ -395,8 +395,11 @@ local function playerFreeQuestStart(playerId, index)
 			return
 		end
 
-		if player:getStorageValue(questTable[index].storage) ~= questTable[index].storageValue then
-			player:setStorageValue(questTable[index].storage, questTable[index].storageValue)
+		local questStorage = questTable[index].storage
+		local questStorageValue = questTable[index].storageValue
+
+		if questStorage and questStorageValue and player:getStorageValue(questStorage) ~= questStorageValue then
+			player:setStorageValue(questStorage, questStorageValue)
 		end
 	end
 
@@ -410,7 +413,7 @@ function freeQuests.onLogin(player)
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_LOOK, "Adding free acccess quests to your character.")
+	player:sendTextMessage(MESSAGE_LOOK, "Adding free access quests to your character.")
 	addEvent(playerFreeQuestStart, 500, player:getId(), 0)
 	player:addOutfit(251, 0)
 	player:addOutfit(252, 0)

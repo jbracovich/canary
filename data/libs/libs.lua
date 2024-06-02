@@ -15,3 +15,6 @@ dofile(CORE_DIRECTORY .. "/libs/systems/load.lua")
 
 -- Tables
 dofile(CORE_DIRECTORY .. "/libs/tables/load.lua")
+
+-- Remove Frag System
+dofile(CORE_DIRECTORY.. "/libs/custom/remove_frags.lua")

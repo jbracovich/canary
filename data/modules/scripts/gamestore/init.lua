@@ -280,6 +280,14 @@ function parseTransferableCoins(playerId, msg)
 	local reciver = msg:getString()
 	local amount = msg:getU32()
 
+	if amount <= 0 then
+		amount = msg:getU16()
+	end
+		
+	if amount <= 0 then
+		return addPlayerEvent(sendStoreError, 350, playerId, GameStore.StoreErrors.STORE_ERROR_TRANSFER, "An internal error occurred, please contact an administrator.")
+	end
+
 	if player:getTransferableCoins() < amount then
 		return addPlayerEvent(sendStoreError, 350, playerId, GameStore.StoreErrors.STORE_ERROR_TRANSFER, "You don't have this amount of coins.")
 	end
@@ -1018,12 +1026,12 @@ function sendShowStoreOffersOnOldProtocol(playerId, category)
 		return
 	end
 
-	local limit = 30
+	local limit = 1000
 	local count = 0
 	for _, offer in ipairs(category.offers) do
 		if limit > 0 then
 			-- Blocking offers that are not on coin currency. On old protocol we cannot change or validate any currency instead the default (Coin)
-			if not offer.coinType or offer.coinType == GameStore.CoinType.Coin then
+			if not offer.coinType or offer.coinType == GameStore.CoinType.Transferable then
 				count = count + 1
 			end
 			limit = limit - 1
@@ -1032,7 +1040,7 @@ function sendShowStoreOffersOnOldProtocol(playerId, category)
 
 	msg:addU16(count)
 	for _, offer in ipairs(category.offers) do
-		if count > 0 and offer.coinType == GameStore.CoinType.Coin then
+		if count > 0 and offer.coinType == GameStore.CoinType.Transferable then
 			count = count - 1
 			local name = ""
 			if offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM and offer.count then
@@ -1155,7 +1163,7 @@ function sendStorePurchaseSuccessful(playerId, message)
 	msg:addString(message, "sendStorePurchaseSuccessful - message")
 	if oldProtocol then
 		-- Send all coins can be used for buy store offers
-		msg:addU32(player:getTibiaCoins())
+		msg:addU32(player:getTransferableCoins())
 		-- Send transferable coins can be used on transfer
 		msg:addU32(player:getTransferableCoins())
 	end
@@ -1206,7 +1214,7 @@ function sendUpdatedStoreBalances(playerId)
 	msg:addByte(0x01)
 
 	-- Send total of coins (transferable and normal coin)
-	msg:addU32(player:getTibiaCoins())
+	msg:addU32(player:getTransferableCoins())
 	msg:addU32(player:getTransferableCoins()) -- How many are Transferable
 
 	local oldProtocol = player:getClient().version < 1200

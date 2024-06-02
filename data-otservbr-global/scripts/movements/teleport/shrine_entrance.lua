@@ -13,6 +13,7 @@ local shrinesEntrance = {
 		{ x = 32212, y = 31130, z = 8 }, --Svargrond
 		{ x = 32784, y = 31243, z = 5 }, --Yalahar
 		{ x = 33592, y = 31896, z = 4 }, --Oramond
+		{ x = 1039, y = 1029, z = 6 }, -- Vip Draconia
 	},
 	earth = {
 		{ x = 32364, y = 31780, z = 9 }, --Carlin
@@ -28,6 +29,7 @@ local shrinesEntrance = {
 		{ x = 32215, y = 31130, z = 8 }, --Svargrond
 		{ x = 32787, y = 31243, z = 5 }, --Yalahar
 		{ x = 33596, y = 31901, z = 4 }, --Oramond
+		{ x = 1041, y = 1025, z = 6 }, --Vip Draconia
 	},
 	fire = {
 		{ x = 32356, y = 31783, z = 9 }, --Carlin
@@ -43,6 +45,7 @@ local shrinesEntrance = {
 		{ x = 32208, y = 31133, z = 8 }, --Svargrond
 		{ x = 32790, y = 31243, z = 5 }, --Yalahar
 		{ x = 33592, y = 31901, z = 4 }, --Oramond
+		{ x = 1069, y = 1029, z = 6 }, --Vip Draconia
 	},
 	energy = {
 		{ x = 32364, y = 31783, z = 9 }, --Carlin
@@ -58,6 +61,7 @@ local shrinesEntrance = {
 		{ x = 32209, y = 31130, z = 8 }, --Svargrond
 		{ x = 32781, y = 31243, z = 5 }, --Yalahar
 		{ x = 33596, y = 31896, z = 4 }, --Oramond
+		{ x = 1068, y = 1025, z = 6 }, --Vip Draconia
 	},
 }
 

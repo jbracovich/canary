@@ -2797,6 +2797,20 @@ Storage = {
 				},
 			},
 		},
+		U13_30 = { -- update 13.30 - Reserved Storages 47952 - 48002
+			TwentyYearsACook = {
+				QuestLine = 47952,
+				TheRestOfRathaDoor = 47953,
+				FlaskBox = 47954,
+				GhostDusterDamage = 47955,
+				RathaConditionsApplied = 47956,
+				DraccoonOutfits = {
+					Outfit = 47997,
+					Outfit = 47998,
+					Outfit = 47999,
+				},
+			},
+		},
 	},
 	-- Reserved storage from 63951 - 63999
 	ThaisExhibition = {
@@ -2842,6 +2856,9 @@ Storage = {
 		},
 		KooldownAid = {
 			LastActivatedAt = 64005,
+		},
+		StaminaRefill = {
+			LastActivatedAt = 64006,
 		},
 		StaminaExtension = {
 			LastActivatedAt = 64007,
@@ -2933,6 +2950,11 @@ GlobalStorage = {
 		-- Reserved storage from 60010 - 60019
 		CurrentServantWave = 60010,
 		ServantsKilled = 60011,
+	},
+	Podium = {
+		One = 70991,
+		Two = 70992,
+		Three = 70993,
 	},
 	Feroxa = {
 		-- Reserved storage from 60020 - 60029
@@ -3128,4 +3150,7 @@ startupGlobalStorages = {
 	GlobalStorage.FerumbrasAscendant.Elements.Second,
 	GlobalStorage.FerumbrasAscendant.Elements.Third,
 	GlobalStorage.FerumbrasAscendant.Elements.Done,
+	GlobalStorage.Podium.One,
+	GlobalStorage.Podium.Two,
+	GlobalStorage.Podium.Three,
 }
