@@ -14,7 +14,7 @@
 class ImbuementFunctions final : LuaScriptInterface {
 public:
 	static void init(lua_State* L) {
-		registerSharedClass(L, "Imbuement", "", ImbuementFunctions::luaCreateImbuement);
+		registerClass(L, "Imbuement", "", ImbuementFunctions::luaCreateImbuement);
 		registerMetaMethod(L, "Imbuement", "__eq", ImbuementFunctions::luaUserdataCompare);
 
 		registerMethod(L, "Imbuement", "getName", ImbuementFunctions::luaImbuementGetName);

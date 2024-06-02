@@ -776,7 +776,7 @@ int ItemFunctions::luaItemGetImbuement(lua_State* L) {
 			continue;
 		}
 
-		const auto &imbuement = imbuementInfo.imbuement;
+		Imbuement* imbuement = imbuementInfo.imbuement;
 		if (!imbuement) {
 			continue;
 		}

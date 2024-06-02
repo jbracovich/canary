@@ -869,8 +869,7 @@ const ImbuementTypeNames imbuementTypeNames = {
 	{ "skillboost shielding", IMBUEMENT_SKILLBOOST_SHIELDING },
 	{ "skillboost distance", IMBUEMENT_SKILLBOOST_DISTANCE },
 	{ "skillboost magic level", IMBUEMENT_SKILLBOOST_MAGIC_LEVEL },
-	{ "increase capacity", IMBUEMENT_INCREASE_CAPACITY },
-	{ "vibrancy", IMBUEMENT_VIBRANCY_PARALYZE }
+	{ "increase capacity", IMBUEMENT_INCREASE_CAPACITY }
 };
 
 /**
