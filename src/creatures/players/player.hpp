@@ -38,7 +38,6 @@
 #include "creatures/players/cyclopedia/player_badge.hpp"
 #include "creatures/players/cyclopedia/player_title.hpp"
 #include "creatures/players/vip/player_vip.hpp"
-#include "creatures/players/cast/cast_viewer.hpp"
 
 class House;
 class NetworkMessage;
@@ -197,9 +196,9 @@ public:
 		}
 	}
 
-	void sendBestiaryCharms() {
+	void BestiarysendCharms() {
 		if (client) {
-			client->sendBestiaryCharms();
+			client->BestiarysendCharms();
 		}
 	}
 	void addBestiaryKillCount(uint16_t raceid, uint32_t amount) {
@@ -497,12 +496,6 @@ public:
 	bool isDisconnected() const {
 		return getIP() == 0;
 	}
-
-	bool hasClientOwner() const;
-
-	ProtocolGame_ptr getClient() const;
-
-	static bool sortByCastViewerCount(std::shared_ptr<Player> lhs, std::shared_ptr<Player> rhs);
 
 	void addContainer(uint8_t cid, std::shared_ptr<Container> container);
 	void closeContainer(uint8_t cid);
@@ -1870,7 +1863,7 @@ public:
 		return it != quickLootListItemIds.end();
 	}
 
-	bool sendKillTrackerUpdate(std::shared_ptr<Container> corpse, const std::string &playerName, const Outfit_t creatureOutfit) const {
+	bool updateKillTracker(std::shared_ptr<Container> corpse, const std::string &playerName, const Outfit_t creatureOutfit) const {
 		if (client) {
 			client->sendKillTrackerUpdate(corpse, playerName, creatureOutfit);
 			return true;
@@ -2814,7 +2807,7 @@ private:
 	std::shared_ptr<Npc> shopOwner = nullptr;
 	std::shared_ptr<Party> m_party = nullptr;
 	std::shared_ptr<Player> tradePartner = nullptr;
-	std::shared_ptr<CastViewer> client = nullptr;
+	ProtocolGame_ptr client;
 	std::shared_ptr<Task> walkTask;
 	std::shared_ptr<Town> town;
 	std::shared_ptr<Vocation> vocation = nullptr;
@@ -3030,8 +3023,6 @@ private:
 	friend class PlayerBadge;
 	friend class PlayerTitle;
 	friend class PlayerVIP;
-	friend class ProtocolLogin;
-	friend class CastViewer;
 
 	std::unique_ptr<PlayerWheel> m_wheelPlayer;
 	std::unique_ptr<PlayerAchievement> m_playerAchievement;
