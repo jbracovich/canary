@@ -758,11 +758,12 @@ void Combat::CombatConditionFunc(std::shared_ptr<Creature> caster, std::shared_p
 				return;
 			}
 
-		if (caster == target || (target && !target->isImmune(condition->getType()))) {
-			auto conditionCopy = condition->clone();
-			if (caster) {
-				conditionCopy->setParam(CONDITION_PARAM_OWNER, caster->getID());
-				conditionCopy->setPositionParam(CONDITION_PARAM_CASTER_POSITION, caster->getPosition());
+			if (condition->getType() == CONDITION_PARALYZE && target) {
+				if (player) {
+					if (reflectParalyzeCondition(caster, player, condition)) {
+						return;
+					}
+				}
 			}
 
 			if (caster == target || (target && !target->isImmune(condition->getType()))) {
