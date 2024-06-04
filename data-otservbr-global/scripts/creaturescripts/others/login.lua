@@ -22,8 +22,8 @@ function playerLogin.onLogin(player)
 
 		if home and not player:isPremium() then
 			setHouseOwner(home, 0)
-			player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "You've lost your house because you are not premium anymore.")
-			player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Your items from house are send to your inbox.")
+			player:sendTextMessage(MESSAGE_ATTENTION, "You've lost your house because you are not premium anymore.")
+			player:sendTextMessage(MESSAGE_ATTENTION, "Your items from house are send to your inbox.")
 		end
 	end
 

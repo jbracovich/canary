@@ -63,7 +63,7 @@ GameStore.Categories = {
 			{
 				icons = { "Premium_Time_30.png" },
 				name = string.format("30 Days of %s", premiumOfferName),
-				price = 250,
+				price = 1000,
 				id = 3030,
 				validUntil = 30,
 				description = premiumDescription,
@@ -72,7 +72,7 @@ GameStore.Categories = {
 			{
 				icons = { "Premium_Time_90.png" },
 				name = string.format("90 Days of %s", premiumOfferName),
-				price = 750,
+				price = 2500,
 				id = 3090,
 				validUntil = 90,
 				description = premiumDescription,
@@ -81,7 +81,7 @@ GameStore.Categories = {
 			{
 				icons = { "Premium_Time_180.png" },
 				name = string.format("180 Days of %s", premiumOfferName),
-				price = 1500,
+				price = 4500,
 				id = 3180,
 				validUntil = 180,
 				description = premiumDescription,
@@ -90,7 +90,7 @@ GameStore.Categories = {
 			{
 				icons = { "Premium_Time_360.png" },
 				name = string.format("360 Days of %s", premiumOfferName),
-				price = 3000,
+				price = 8000,
 				id = 3360,
 				validUntil = 360,
 				description = premiumDescription,
@@ -110,7 +110,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Axe",
 				price = 125,
 				itemtype = 35280,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -120,7 +120,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Bow",
 				price = 125,
 				itemtype = 35282,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -130,7 +130,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Club",
 				price = 125,
 				itemtype = 35281,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -140,7 +140,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Rod",
 				price = 125,
 				itemtype = 35283,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -150,7 +150,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Sword",
 				price = 125,
 				itemtype = 35279,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -160,7 +160,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Wand",
 				price = 125,
 				itemtype = 35284,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -170,7 +170,7 @@ GameStore.Categories = {
 				name = "Durable Exercise Shield",
 				price = 125,
 				itemtype = 44066,
-				charges = 3500,
+				charges = 2200,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -180,7 +180,7 @@ GameStore.Categories = {
 				name = "Exercise Axe",
 				price = 250,
 				itemtype = 28553,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -190,7 +190,7 @@ GameStore.Categories = {
 				name = "Exercise Bow",
 				price = 250,
 				itemtype = 28555,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -200,7 +200,7 @@ GameStore.Categories = {
 				name = "Exercise Club",
 				price = 250,
 				itemtype = 28554,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -210,7 +210,7 @@ GameStore.Categories = {
 				name = "Exercise Rod",
 				price = 250,
 				itemtype = 28556,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -220,7 +220,7 @@ GameStore.Categories = {
 				name = "Exercise Sword",
 				price = 250,
 				itemtype = 28552,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -230,7 +230,7 @@ GameStore.Categories = {
 				name = "Exercise Wand",
 				price = 250,
 				itemtype = 28557,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -240,7 +240,7 @@ GameStore.Categories = {
 				name = "Exercise Shield",
 				price = 250,
 				itemtype = 44065,
-				charges = 7200,
+				charges = 5000,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 500 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 				movable = true
@@ -248,7 +248,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Axe.png" },
 				name = "Lasting Exercise Axe",
-				price = 500,
+				price = 650,
 				itemtype = 35286,
 				charges = 14400,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 14400 times a piece",
@@ -258,7 +258,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Bow.png" },
 				name = "Lasting Exercise Bow",
-				price = 500,
+				price = 650,
 				itemtype = 35288,
 				charges = 14400,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 14400 times a piece",
@@ -268,7 +268,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Club.png" },
 				name = "Lasting Exercise Club",
-				price = 500,
+				price = 650,
 				itemtype = 35287,
 				charges = 14400,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 14400 times a piece",
@@ -278,7 +278,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Rod.png" },
 				name = "Lasting Exercise Rod",
-				price = 500,
+				price = 650,
 				itemtype = 35289,
 				charges = 14400,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
@@ -288,7 +288,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Sword.png" },
 				name = "Lasting Exercise Sword",
-				price = 500,
+				price = 650,
 				itemtype = 35285,
 				charges = 14400,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 14400 times a piece",
@@ -298,7 +298,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Wand.png" },
 				name = "Lasting Exercise Wand",
-				price = 500,
+				price = 650,
 				itemtype = 35290,
 				charges = 14400,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
@@ -308,7 +308,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Shield.png" },
 				name = "Lasting Exercise Shield",
-				price = 500,
+				price = 650,
 				itemtype = 44067,
 				charges = 14400,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 14400 times a piece",
@@ -818,7 +818,7 @@ GameStore.Categories = {
 			},
 			{
 				icons = { "Hailstorm_Fury.png" },
-				name = "Hailtorm Fury",
+				name = "Hailstorm Fury",
 				price = 780,
 				id = 55,
 				description = "{character}\n{speedboost}\n\n<i>Once captured and held captive by a mad hunter, the Hailstorm Fury is the result of sick experiments. Fed only with demon dust and concentrated demonic blood it had to endure a dreadful transformation. The demonic blood that is now running through its veins, however, provides it with incredible strength and endurance.</i>",
@@ -1348,7 +1348,7 @@ GameStore.Categories = {
 			},
 			{
 				icons = { "Tangerine_Flecked_Koi.png" },
-				name = "Tangerine Speckled Koi",
+				name = "Tangerine Flecked Koi",
 				price = 750,
 				id = 207,
 				description = "{character}\n{speedboost}\n\n<i>The vibrant colours and elegance of a Tangerine Flecked Koi, a Brass Speckled Koi, and an Ink Spotted Koi make them a fascinating sight to behold, and their boisterous nature and speed will make you the first to arrive wherever there are riches to gain. Wield your weapon as gracefully and effortlessly as your swimming companion glides through the water, and the two of you will make the perfect and most deadly pair.</i>",
@@ -4223,7 +4223,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Furniture
 	{
-		icons = { "Category_HouseFurniture.png" },
+		icons = { "Grandiose_Furniture.png" },
 		name = "Furniture",
 		parent = "Houses",
 		rookgaard = true,
@@ -5503,7 +5503,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Upgrades
 	{
-		icons = { "Category_HouseUpgrades.png" },
+		icons = { "Category_HouseEquipment.png" },
 		name = "Upgrades",
 		parent = "Houses",
 		rookgaard = true,
@@ -5594,7 +5594,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Hirelings
 	{
-		icons = { "Category_HouseTools_NPCApprenticeships.png" },
+		icons = { "Hireling_Male.png" },
 		name = "Hirelings",
 		parent = "Houses",
 		rookgaard = true,
@@ -5675,7 +5675,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Hireling Dresses
 	{
-		icons = { "Category_HouseTools_NPCDresses.png" },
+		icons = { "Hireling_Ferumbras.png" },
 		name = "Hireling Dresses",
 		parent = "Houses",
 		rookgaard = true,
@@ -5860,7 +5860,7 @@ GameStore.Categories = {
 				price = 500,
 				itemtype = 45540,
 				count = 1,
-				description = "Remove Skulls",
+				description = "<i>This item removes all skulls and frags from the character.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
 				movable = true
 			},
@@ -5875,7 +5875,7 @@ GameStore.Categories = {
 	},
 	-- Draconia Items ~ Forge Items
 	{
-		icons = { "Tibiora's_Boxbp.png" },
+		icons = { "Exalted_Core.png" },
 		name = "Forge Items",
 		parent = "Draconia Items",
 		rookgaard = true,
@@ -5893,7 +5893,7 @@ GameStore.Categories = {
 				movable = true
 			},
 			{
-				icons = { "Dusts.png" },
+				icons = { "Dust.png" },
 				name = "Dusts",
 				price = 100,
 				itemtype = 37160,
@@ -5904,17 +5904,6 @@ GameStore.Categories = {
 			    home = true,
 				movable = true
 			},
-			{
-			    icons = { "Dusts.png" },
-			    name = "Dusts",
-			    price = 350,
-				itemtype = 37160,
-			    count = 2,
-				description = "<i>This item can be used to acquire Dusts!</i>\n\n{info} This item, when used once, increases your dust by 25\n\n{info} When purchasing x1, it gives you 1 Dust.\n{info} When purchasing x2, it gives you 4 Dusts.",
-			    type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				state = GameStore.States.STATE_NEW,
-			    movable = true
-		    },
 	    },
     },
 	-- Draconia Items ~ Stamina
@@ -5980,39 +5969,30 @@ GameStore.Categories = {
 			    home = true,
 				movable = true
 			},
-		},
-	},
-		-- Draconia Items ~ Items Vip
-		{
-			icons = { "Tibiora's_Boxbp.png" },
-			name = "Teleport Cubes",
-			parent = "Draconia Items",
-			rookgaard = true,
-			offers = {
-				{
-					icons = { "Teleport_Cube.png" },
-					name = "Teleport Citys",
-					price = 500,
-					itemtype = 31633,
-					count = 1,
-					description = "<i>This cube teleports you directly to the bosses.</i>",
-					type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-					state = GameStore.States.STATE_NEW,
-					home = true,
-				},
-				{
-					icons = { "Teleport_Cube.png" },
-					name = "Teleport Bosses",
-					price = 500,
-					itemtype = 33313,
-					count = 1,
-					description = "<i>This cube teleports you directly to the bosses.</i>",
-					type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-					state = GameStore.States.STATE_NEW,
-					home = true,
-				},
+			{
+				icons = { "Teleport_Cube.png" },
+				name = "Teleport Citys",
+				price = 500,
+				itemtype = 31633,
+				count = 1,
+				description = "<i>This cube teleports you directly to the bosses.</i>",
+				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
+				state = GameStore.States.STATE_NEW,
+				home = true,
+			},
+			{
+				icons = { "Teleport_Bosses.png" },
+				name = "Teleport Bosses",
+				price = 500,
+				itemtype = 33313,
+				count = 1,
+				description = "<i>This cube teleports you directly to the bosses.</i>",
+				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
+				state = GameStore.States.STATE_NEW,
+				home = true,
 			},
 		},
+	},
 	-- Draconia Items ~ Backpacks
 	{
 		icons = { "Gold_Pouchbp.png" },

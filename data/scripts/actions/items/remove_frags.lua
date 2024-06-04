@@ -5,9 +5,8 @@ function removeFrags.onUse(player, item, fromPosition, target, toPosition, isHot
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can only remove RED SKULL or BLACK SKULL!")
         return true
     end
-    if(not getTileInfo(player:getPosition()).protection) then
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "You should be in PROTECTION ZONE.")
-        player:getPosition():sendMagicEffect(CONST_ME_POFF)
+    if not inPz then
+        removeFragsMessage(player, CONST_ME_POFF, "You can only use this in a protection zone.")
         return true
     end
     

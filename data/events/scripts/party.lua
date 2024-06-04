@@ -66,7 +66,7 @@ function Party:onDisband()
 end
 
 function Party:onShareExperience(exp)
-	local sharedExperienceMultiplier = 1.20 --20%
+	local sharedExperienceMultiplier = 1.40 --40%
 	local vocationsIds = {}
 
 	local vocationId = self:getLeader():getVocation():getBase():getId()
@@ -83,7 +83,7 @@ function Party:onShareExperience(exp)
 
 	local size = #vocationsIds
 	if size > 1 then
-		sharedExperienceMultiplier = 1.0 + ((size * (5 * (size - 1) + 10)) / 100)
+		sharedExperienceMultiplier = 5.0 + ((size * (5 * (size - 1) + 10)) / 100)
 	end
 
 	return math.ceil((exp * sharedExperienceMultiplier) / (#self:getMembers() + 1))

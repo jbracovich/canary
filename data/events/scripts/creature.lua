@@ -30,7 +30,13 @@ function Creature:onTargetCombat(target)
 		return true
 	end
 
-	if target:isPlayer() then
+	if self:isPlayer() and target:isPlayer() then
+		if self:getStorageValue(BATTLEFIELD.storage) > 0 then
+			if self:getStorageValue(BATTLEFIELD.storage) == target:getStorageValue(BATTLEFIELD.storage) then
+				return RETURNVALUE_YOUMAYNOTATTACKTHISPLAYER
+			end
+		end
+
 		if self:isMonster() then
 			local isProtected = target:kv():get("combat-protection") or 0
 
@@ -91,6 +97,10 @@ function Creature:onChangeOutfit(outfit)
 				if summon:getType():familiar() then
 					if summon:getOutfit().lookType ~= familiarLookType then
 						summon:setOutfit({ lookType = familiarLookType })
+						if self:getStorageValue(BATTLEFIELD.storage) > 0 then
+							self:sendCancelMessage("You can't change my outfit inside the event.")
+							return false
+						end
 					end
 					break
 				end

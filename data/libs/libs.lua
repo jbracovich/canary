@@ -18,3 +18,6 @@ dofile(CORE_DIRECTORY .. "/libs/tables/load.lua")
 
 -- Remove Frag System
 dofile(CORE_DIRECTORY.. "/libs/custom/remove_frags.lua")
+
+-- Battlefield Event library
+dofile(CORE_DIRECTORY .. '/libs/events/battlefield.lua')
