@@ -8,5 +8,5 @@ function battlefield.onTime(interval)
 	end
 	return true
 end
-battlefield:time("22:50:00")
+battlefield:time("19:00:00")
 battlefield:register()
