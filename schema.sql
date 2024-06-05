@@ -835,16 +835,6 @@ CREATE TABLE IF NOT EXISTS `kv_store` (
   PRIMARY KEY (`key_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Table structure `Castle War`
-CREATE TABLE `castle_war` (
-  `id` int NOT NULL DEFAULT '0',
-  `guild_id` int NOT NULL,
-  `guild_name` varchar(64) NOT NULL,
-  `timestamp` int NOT NULL,
-  `throne_points` bigint NOT NULL DEFAULT '0',
-  `active` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 -- Create Account god/god
 INSERT INTO `accounts`
 (`id`, `name`, `email`, `password`, `type`) VALUES

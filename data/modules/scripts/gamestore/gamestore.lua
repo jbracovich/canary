@@ -4149,7 +4149,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Furniture
 	{
-		icons = { "Grandiose_Furniture.png" },
+		icons = { "Category_HouseFurniture.png" },
 		name = "Furniture",
 		parent = "Houses",
 		rookgaard = true,
@@ -5429,7 +5429,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Upgrades
 	{
-		icons = { "Category_HouseEquipment.png" },
+		icons = { "Category_HouseUpgrades.png" },
 		name = "Upgrades",
 		parent = "Houses",
 		rookgaard = true,
@@ -5520,7 +5520,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Hirelings
 	{
-		icons = { "Hireling_Male.png" },
+		icons = { "Category_HouseTools_NPCApprenticeships.png" },
 		name = "Hirelings",
 		parent = "Houses",
 		rookgaard = true,
@@ -5601,7 +5601,7 @@ GameStore.Categories = {
 	},
 	-- House ~ Hireling Dresses
 	{
-		icons = { "Hireling_Ferumbras.png" },
+		icons = { "Category_HouseTools_NPCDresses.png" },
 		name = "Hireling Dresses",
 		parent = "Houses",
 		rookgaard = true,
