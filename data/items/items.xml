@@ -31773,12 +31773,12 @@
 	<item id="13979" article="a" name="dead spitter">
 		<attribute key="duration" value="10"/>
 		<attribute key="decayTo" value="13980"/>
-		<attribute key="containersize" value="10"/>
+		<attribute key="containersize" value="36"/>
 	</item>
 	<item id="13980" article="a" name="dead spitter">
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="13981"/>
-		<attribute key="containersize" value="10"/>
+		<attribute key="containersize" value="36"/>
 	</item>
 	<item id="13981" article="a" name="dead spitter">
 		<attribute key="duration" value="300"/>

@@ -2933,7 +2933,7 @@ void Game::playerQuickLootCorpse(std::shared_ptr<Player> player, std::shared_ptr
 		ss << "No loot";
 	}
 	ss << ".";
-	player->sendTextMessage(MESSAGE_STATUS, ss.str());
+	player->sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 
 	if (shouldNotifyCapacity) {
 		ss.str(std::string());
