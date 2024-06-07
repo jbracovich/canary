@@ -24,7 +24,6 @@ function IsTravelFree()
 end
 
 -- NOTE: 0 is disabled.
-PARTY_PROTECTION = (IsRetroPVP() and 0) or 1
 ADVANCED_SECURE_MODE = (IsRetroPVP() and 0) or 1
 
 NORTH = DIRECTION_NORTH
