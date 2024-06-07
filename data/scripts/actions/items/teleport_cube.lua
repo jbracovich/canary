@@ -1,5 +1,5 @@
 local config = {
-    price = 50000,
+    price = 50000, -- Este valor ya no es necesario, pero lo dejamos por si en el futuro quieres volver a activarlo
     storage = 9007,
     cooldown = 10,
     locations = {
@@ -35,7 +35,7 @@ local function windowChoice(window, player, location)
     window:addChoice(location.name, function(player, button, choice)
         if button.name == "Select" then
             player:teleportTo(location.position, true)
-            player:removeMoneyBank(config.price)
+            -- player:removeMoneyBank(config.price) -- Eliminada la deducción de dinero
             supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to " .. location.name)
             player:setStorageValue(config.storage, os.time() + config.cooldown)
         end
@@ -60,10 +60,10 @@ function teleportCube.onUse(player, item, fromPosition, target, toPosition, isHo
         return true
     end
 
-    if player:getMoney() + player:getBankBalance() < config.price then
-        supremeCubeMessage(player, CONST_ME_POFF, "You don't have enough money.")
-        return true
-    end
+    -- if player:getMoney() + player:getBankBalance() < config.price then -- Eliminada la verificación de dinero
+    --     supremeCubeMessage(player, CONST_ME_POFF, "You don't have enough money.")
+    --     return true
+    -- end
 
     if player:getStorageValue(config.storage) > os.time() then
         local remainingTime = player:getStorageValue(config.storage) - os.time()
@@ -73,7 +73,7 @@ function teleportCube.onUse(player, item, fromPosition, target, toPosition, isHo
 
     local window = ModalWindow({
         title = "Teleport Modal",
-        message = "Select a Location - Price: " .. config.price .. " gold.",
+        message = "Select a Location.", -- Eliminada la mención del precio
     })
 
     if house then
