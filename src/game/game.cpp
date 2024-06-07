@@ -5443,7 +5443,7 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 				ss << "1 item.";
 			}
 
-			player->sendTextMessage(MESSAGE_LOOT, ss.str());
+			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			return;
 		}
 
