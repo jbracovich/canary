@@ -357,6 +357,10 @@ local questTable = {
 	{ storage = Storage.LiquidBlackQuest.Visitor, storageValue = 5 },
 	{ storage = Storage.Quest.U8_4.BloodBrothers.VengothAccess, storageValue = 1 },
 
+	--Demon Oak Quest
+
+	{ storage = Storage.DemonOak.Progress, storageValue = 1 },
+
 	-- Assassin Outfit quests
 	{ storage = Storage.KillingInTheNameOf.BudrikMinos, storageValue = 0 },
 	{ storage = Storage.ToOutfoxAFoxQuest, storageValue = 2 },

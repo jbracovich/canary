@@ -1791,6 +1791,9 @@
 	<npc centerx="32398" centery="32222" centerz="7" radius="1">
 		<npc name="Xodet" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32343" centery="32224" centerz="7" radius="1">
+		<npc name="Evany" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32066" centery="32225" centerz="7" radius="1">
 		<npc name="Lily" x="0" y="0" z="7" spawntime="60" />
 	</npc>
