@@ -33,7 +33,7 @@ end
 
 function Game.broadcastMessage(message, messageType)
 	if not messageType then
-		messageType = MESSAGE_GAME_HIGHLIGHT
+		messageType = MESSAGE_EVENT_ADVANCE
 	end
 
 	for _, player in ipairs(Game.getPlayers()) do

@@ -1,6 +1,36 @@
 local effects = {
-    {position = Position(32365, 32236, 7), text = 'Trainers', effect = CONST_ME_GROUNDSHAKER},
-    {position = Position(32373, 32236, 7), text = 'Vip Zone', effect = CONST_ME_GROUNDSHAKER},
+
+    --Templo Thais
+    {position = Position(32365, 32236, 7), text = 'Trainers', delay = 1 },
+    {position = Position(32373, 32236, 7), text = 'Vip Zone', delay = 1 },
+
+    --Teleports
+    {position = Position(32350, 32223, 7), text = 'Teleports', delay = 1 },
+
+    -- Zona de Hunts Easy
+    {position = Position(1058, 740, 5), text = 'Easy', delay = 1 },
+
+    --Zona de Hunts Medium
+    {position = Position(1060, 740, 5), text = 'Medium', delay = 1 },
+
+    -- Zona de Hunts Hard
+    {position = Position(1062, 740, 5), text = 'Hard', delay = 1 },
+
+    --Bosses
+    {position = Position(1053, 745, 5), text = 'Bosses', delay = 1 },
+
+    --Quest
+    {position = Position(1053, 747, 5), text = 'Quests', delay = 1 },
+
+    --Cassino
+    {position = Position(1067, 746, 5), text = 'Cassino', delay = 1 },
+
+    --Trainers
+    {position = Position(1059, 752, 5), text = 'Trainers', delay = 1 },
+
+    --Dummys
+    {position = Position(1061, 752, 5), text = 'Dummys', delay = 1 },
+
 }
 
 local animatedText = GlobalEvent("AnimatedText") 

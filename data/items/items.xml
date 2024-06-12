@@ -45272,8 +45272,10 @@ Awarded by TibiaMisterios.com.br"/>
 		</attribute>
 	</item>
 	<item id="22761" article="a" name="vortex">
+		<attribute key="primarytype" value="teleporters"/>
 		<attribute key="type" value="teleport"/>
-		<attribute key="description" value="It draws you nearer."/>
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="effect" value="teleport"/>
 	</item>
 	<item id="22762" article="a" name="maimer">
 		<attribute key="primarytype" value="club weapons"/>
@@ -75767,6 +75769,18 @@ Granted by TibiaGoals.com"/>
 		<attribute key="decayTo" value="44038"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="fluidSource" value="blood"/>
+	</item>
+		<item id="44049" article="a" name="magic forcefield">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="effect" value="teleport"/>
+	</item>
+		<item id="44063" article="a" name="magic forcefield">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="effect" value="teleport"/>
 	</item>
 	<item id="44064" article="an" name="training shield">
 		<attribute key="primarytype" value="training weapons"/>

@@ -73,7 +73,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = false,
 		message = "So it's Ab'Dendriel, the tree city of the elves you chose as your new home?",
-		destination = { x = 32734, y = 31668, z = 6 },
+		destination = { x = 32732, y = 31634, z = 7 },
 	},
 	[TOWNS_LIST.ANKRAHMUN] = {
 		name = "Ankrahmun",
@@ -81,7 +81,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = true,
 		message = "So it's Ankrahmun, the city you chose as your new home?",
-		destination = { x = 33092, y = 32883, z = 6 },
+		destination = { x = 33194, y = 32853, z = 8 },
 	},
 	[TOWNS_LIST.CARLIN] = {
 		name = "Carlin",
@@ -92,7 +92,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = false,
 		message = "So it's Carlin, the city under women's rule, a rival to Thais you chose as your new home?",
-		destination = { x = 32387, y = 31820, z = 6 },
+		destination = { x = 32360, y = 31782, z = 7 },
 	},
 	[TOWNS_LIST.DARASHIA] = {
 		name = "Darashia",
@@ -103,7 +103,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = true,
 		message = "So it's Darashia, the city you chose as your new home?",
-		destination = { x = 33289, y = 32481, z = 6 },
+		destination = { x = 33213, y = 32454, z = 1 },
 	},
 	[TOWNS_LIST.EDRON] = {
 		name = "Edron",
@@ -114,7 +114,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = true,
 		message = "So it's Edron, the city you chose as your new home?",
-		destination = { x = 33175, y = 31764, z = 6 },
+		destination = { x = 33217, y = 31814, z = 8 },
 	},
 	[TOWNS_LIST.KAZORDOON] = {
 		name = "Kazordoon",
@@ -130,7 +130,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = true,
 		message = "So it's Liberty Bay, the city you chose as your new home?",
-		destination = { x = 32285, y = 32892, z = 6 },
+		destination = { x = 32317, y = 32826, z = 7 },
 	},
 	[TOWNS_LIST.PORT_HOPE] = {
 		name = "Port Hope",
@@ -142,7 +142,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = true,
 		message = "So it's Port Hope, the city you chose as your new home?",
-		destination = { x = 32527, y = 32784, z = 6 },
+		destination = { x = 32594, y = 32745, z = 7 },
 	},
 	[TOWNS_LIST.SVARGROND] = {
 		name = "Svargrond",
@@ -161,7 +161,7 @@ local towns = {
 		canBeSailed = true,
 		isPremium = false,
 		message = "So it's Thais, the oldest of the human kingdoms you chose as your new home?",
-		destination = { x = 32310, y = 32210, z = 6 },
+		destination = { x = 32369, y = 32241, z = 7 },
 	},
 	[TOWNS_LIST.VENORE] = {
 		name = "Venore",
@@ -174,7 +174,7 @@ local towns = {
 		isPremium = false,
 		message = "So it's Venore, \z
 			the rich swamp city of traders, recommended for new heroes, that you chose as your new home?",
-		destination = { x = 32954, y = 32022, z = 6 },
+		destination = { x = 32957, y = 32076, z = 7 },
 	},
 	[TOWNS_LIST.YALAHAR] = {
 		name = "Yalahar",

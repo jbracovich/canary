@@ -205,7 +205,7 @@ void IOBosstiary::addBosstiaryKill(std::shared_ptr<Player> player, const std::sh
 									"As a reward, a free Podium of Vigour has been sent to your Store inbox. "
 									"You can place this podium in any house you own with this character. "
 									"Use it to display bosses for which you have reached at least the Expertise level.";
-		player->sendTextMessage(MESSAGE_GAME_HIGHLIGHT, podiumMessage);
+		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, podiumMessage);
 
 		player->addStorageValue(STORAGEVALUE_PODIUM, 1);
 	}

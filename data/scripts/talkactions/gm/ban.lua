@@ -1,5 +1,3 @@
-local banDays = 7
-
 local ban = TalkAction("/ban")
 
 function ban.onSay(player, words, param)
@@ -11,13 +9,10 @@ function ban.onSay(player, words, param)
 		return true
 	end
 
-	local name = param
-	local reason = ""
-
-	local separatorPos = param:find(",")
-	if separatorPos then
-		name = param:sub(0, separatorPos - 1)
-		reason = string.trim(param:sub(separatorPos + 1))
+	local name, reason, duration = param:match("([^,]+),%s*(.-)%s*,%s*(%d+)")
+	if not name then
+		player:sendCancelMessage("Invalid parameters. Usage: /ban <name>, <reason>, <duration>")
+		return false
 	end
 
 	local accountId = getAccountNumberByPlayerName(name)
@@ -32,7 +27,8 @@ function ban.onSay(player, words, param)
 	end
 
 	local timeNow = os.time()
-	db.query("INSERT INTO `account_bans` (`account_id`, `reason`, `banned_at`, `expires_at`, `banned_by`) VALUES (" .. accountId .. ", " .. db.escapeString(reason) .. ", " .. timeNow .. ", " .. timeNow + (banDays * 86400) .. ", " .. player:getGuid() .. ")")
+	local expiresAt = timeNow + (tonumber(duration) * 86400)
+	db.query("INSERT INTO `account_bans` (`account_id`, `reason`, `banned_at`, `expires_at`, `banned_by`) VALUES (" .. accountId .. ", " .. db.escapeString(reason) .. ", " .. timeNow .. ", " .. expiresAt .. ", " .. player:getGuid() .. ")")
 
 	local target = Player(name)
 	if target then
@@ -43,6 +39,8 @@ function ban.onSay(player, words, param)
 	else
 		player:sendTextMessage(MESSAGE_ADMINISTRATOR, name .. " has been banned.")
 	end
+
+	return true
 end
 
 ban:separator(" ")

@@ -298,7 +298,7 @@ bool AnnounceEvent::configureRaidEvent(const pugi::xml_node &eventNode) {
 	if (typeAttribute) {
 		std::string tmpStrValue = asLowerCaseString(typeAttribute.as_string());
 		if (tmpStrValue == "warning") {
-			messageType = MESSAGE_GAME_HIGHLIGHT;
+			messageType = MESSAGE_ADMINISTRATOR;
 		} else if (tmpStrValue == "event") {
 			messageType = MESSAGE_EVENT_ADVANCE;
 		} else if (tmpStrValue == "default") {
