@@ -72,5 +72,5 @@ function trainerEntrance.onStepIn(creature, item, position, fromPosition)
 	return true
 end
 
-trainerEntrance:position({ x = 32365, y = 32236, z = 7 })
+trainerEntrance:position({ x = 1059, y = 752, z = 5 })
 trainerEntrance:register()
