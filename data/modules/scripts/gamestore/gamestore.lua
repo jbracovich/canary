@@ -5843,7 +5843,7 @@ GameStore.Categories = {
 				icons = { "Stamina_Refill.png" },
 				name = "Stamina Refill",
 				price = 750,
-				itemtype = 45539,
+				itemtype = 45606,
 				count = 1,
 				description = "<i>Drinking this potion to completely fill your stamina.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
@@ -5916,95 +5916,6 @@ GameStore.Categories = {
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
 				state = GameStore.States.STATE_NEW,
 				home = true,
-			},
-		},
-	},
-	-- Draconia Items ~ Backpacks
-	{
-		icons = { "Gold_Pouchbp.png" },
-		name = "Backpacks",
-		parent = "Draconia Items",
-		rookgaard = true,
-		offers = {
-			{
-				icons = { "Sanguine_Backpack.png" },
-				name = "Sanguine Backpack",
-				price = 300,
-				itemtype = 45534,
-				count = 1,
-				description = "Backpack Sanguine",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Arboreal_Backpack.png" },
-				name = "Arboreal Backpack",
-				price = 300,
-				itemtype = 45532,
-				count = 1,
-				description = "Backpack Arboreal",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Spiritthorn_Backpack.png" },
-				name = "Spiritthorn Backpack",
-				price = 300,
-				itemtype = 45535,
-				count = 1,
-				description = "Backpack Spiritthorn",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Arcanomancer_Backpack.png" },
-				name = "Arcanomancer Backpack",
-				price = 300,
-				itemtype = 45533,
-				count = 1,
-				description = "Backpack Arcanomancer",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Alicorn_Backpack.png" },
-				name = "Alicorn Backpack",
-				price = 300,
-				itemtype = 45531,
-				count = 1,
-				description = "Backpack Alicornn",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Suncrest_Backpack.png" },
-				name = "Suncrest Backpack",
-				price = 300,
-				itemtype = 45536,
-				count = 1,
-				description = "Backpack Suncrest",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Voidwalker_Backpack.png" },
-				name = "Voidwalker Backpack",
-				price = 300,
-				itemtype = 45537,
-				count = 1,
-				description = "Backpack Voidwalker",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
-			},
-			{
-				icons = { "Soul_War_Backpack.png" },
-				name = "Soul War Backpack",
-				price = 300,
-				itemtype = 45538,
-				count = 1,
-				description = "Backpack Soul War",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				movable = true
 			},
 		},
 	},

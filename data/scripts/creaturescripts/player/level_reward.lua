@@ -11,7 +11,7 @@ local table =
 	[100] = {type = "bank", id = {100000, 0}, msg = "Was deposited in your bank 100000 gold coins!"},
 }
 
-local storage = 15000
+local storage = 15003
 
 local levelReward = CreatureEvent("Level Reward")
 function levelReward.onAdvance(player, skill, oldLevel, newLevel)

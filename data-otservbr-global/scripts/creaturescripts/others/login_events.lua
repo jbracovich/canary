@@ -6,6 +6,10 @@ function loginEvents.onLogin(player)
 		"FamiliarLogin",
 		"FamiliarAdvance",
 		--Quests
+
+		--Karin
+		"KarinLogin",
+		
 		--Cults Of Tibia Quest
 		"HealthPillar",
 		"YalahariHealth",

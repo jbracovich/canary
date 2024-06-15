@@ -783,17 +783,14 @@
 	<npc centerx="32363" centery="32210" centerz="6" radius="1">
 		<npc name="Todd" x="0" y="0" z="6" spawntime="60" />
 	</npc>
-	<npc centerx="32362" centery="32222" centerz="6" radius="1">
-		<npc name="Haroun" x="0" y="0" z="6" spawntime="60" />
+	<npc centerx="32361" centery="32223" centerz="6" radius="1">
+		<npc name="Addoner" x="0" y="0" z="6" spawntime="60" />
 	</npc>
 	<npc centerx="32425" centery="32223" centerz="6" radius="1">
 		<npc name="Tim, The Guard" x="0" y="0" z="6" spawntime="60" />
 	</npc>
-	<npc centerx="32359" centery="32225" centerz="6" radius="1">
-		<npc name="Addoner" x="0" y="0" z="6" spawntime="60" />
-	</npc>
 	<npc centerx="32358" centery="32231" centerz="6" radius="1">
-		<npc name="Rashid" x="0" y="0" z="6" spawntime="60" />
+		<npc name="Evany" x="0" y="0" z="6" spawntime="60" />
 	</npc>
 	<npc centerx="32343" centery="32245" centerz="6" radius="1">
 		<npc name="Galuna" x="0" y="0" z="6" spawntime="60" />
@@ -1779,9 +1776,6 @@
 	<npc centerx="32390" centery="32219" centerz="7" radius="1">
 		<npc name="Quero" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="32362" centery="32220" centerz="7" radius="1">
-		<npc name="Alesar" x="0" y="0" z="7" spawntime="60" />
-	</npc>
 	<npc centerx="32381" centery="32220" centerz="7" radius="1">
 		<npc name="Oswald" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1791,14 +1785,8 @@
 	<npc centerx="32398" centery="32222" centerz="7" radius="1">
 		<npc name="Xodet" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="32343" centery="32224" centerz="7" radius="1">
-		<npc name="Evany" x="0" y="0" z="7" spawntime="60" />
-	</npc>
 	<npc centerx="32066" centery="32225" centerz="7" radius="1">
 		<npc name="Lily" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="32362" centery="32226" centerz="7" radius="1">
-		<npc name="Nah'Bob" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32450" centery="32226" centerz="7" radius="1">
 		<npc name="Palomino" x="0" y="0" z="7" spawntime="60" />
@@ -1814,9 +1802,6 @@
 	</npc>
 	<npc centerx="32401" centery="32232" centerz="7" radius="1">
 		<npc name="Pig" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="32358" centery="32234" centerz="7" radius="2">
-		<npc name="Yaman" x="1" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32342" centery="32235" centerz="7" radius="1">
 		<npc name="Elane" x="0" y="0" z="7" spawntime="60" />

@@ -750,7 +750,7 @@ enum class AttrSubId_t {
 enum Concoction_t : uint16_t {
 	KooldownAid = 36723,
 	StaminaExtension = 36725,
-	StaminaRefill = 45539,
+	StaminaRefill = 45606,
 	StrikeEnhancement = 36724,
 	CharmUpgrade = 36726,
 	WealthDuplex = 36727,
