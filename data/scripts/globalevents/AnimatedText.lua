@@ -1,7 +1,6 @@
 local effects = {
 
     --Posiones
-    {position = Position(32357, 32231, 7), text = 'Buff Power', delay = 1 },
     {position = Position(32357, 32232, 7), text = 'Dodge', delay = 1 },
     {position = Position(32357, 32233, 7), text = 'Critical', delay = 1 },
     {position = Position(32357, 32234, 7), text = 'Reflect', delay = 1 },

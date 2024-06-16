@@ -101,6 +101,7 @@ monster.loot = {
 	{ name = "foxtail", chance = 100 },
 	{ name = "wolf backpack", chance = 100 },
 	{ name = "silver token", chance = 100 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

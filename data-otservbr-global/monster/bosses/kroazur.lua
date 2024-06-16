@@ -90,6 +90,7 @@ monster.loot = {
 	{ name = "gold token", chance = 6580 },
 	{ name = "gold ingot", chance = 6410 },
 	{ name = "nightmare blade", chance = 3020 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

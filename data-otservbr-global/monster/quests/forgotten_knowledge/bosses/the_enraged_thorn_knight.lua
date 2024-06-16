@@ -110,6 +110,7 @@ monster.loot = {
 	{ id = 24954, chance = 500, unique = true }, -- part of a rune
 	{ id = 22721, chance = 100000 }, -- gold token
 	{ id = 22516, chance = 100000 }, -- silver token
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

@@ -76238,6 +76238,26 @@ Granted by TibiaGoals.com"/>
         <attribute key="primarytype" value="valuables" />
         <attribute key="weight" value="20" />
     </item>
+		<item id="45553" name="Dodge Potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion increase your dodge!."/>
+		<attribute key="weight" value="210"/>
+	</item>
+		<item id="45554" name="Critical Potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion increase your critical!."/>
+		<attribute key="weight" value="210"/>
+	</item>
+		<item id="45555" name="Reflect Potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion increase your reflect!."/>
+		<attribute key="weight" value="210"/>
+	</item>
+		<item id="45672" name="Power Potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion increase your Damage and Defense!."/>
+		<attribute key="weight" value="210"/>
+	</item>
 		<item id="45675" article="an" name="helios crown">
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="absorbpercentphysical" value="6"/>
@@ -76695,15 +76715,33 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
-		<item id="45702" article="a" name="demeter backpack">
-		<attribute key="primarytype" value="containers"/>
-		<attribute key="containersize" value="35"/>
-		<attribute key="weight" value="1800"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="increase capacity" value="3"/>
-		</attribute>
+	<item id="45697" article="an" name="demeter quiver">
+		<attribute key="primarytype" value="quivers"/>
+		<attribute key="slotType" value="right-hand"/>
+		<attribute key="showattributes" value="1"/>
+		<attribute key="containersize" value="12"/>
+		<attribute key="weight" value="2000"/>
+		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="perfectshotdamage" value="30"/>
+		<attribute key="perfectshotrange" value="5"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="backpack"/>
+			<attribute key="level" value="8"/>
+			<attribute key="slot" value="right-hand"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="45698" article="an" name="demeter amulet">
+		<attribute key="primarytype" value="amulets and necklaces"/>
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="absorbpercentphysical" value="12"/>
+		<attribute key="absorbpercentpoison" value="32"/>
+		<attribute key="skilldist" value="6"/>
+		<attribute key="armor" value="3"/>
+		<attribute key="weight" value="430"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="8"/>
+			<attribute key="slot" value="necklace"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="45699" article="a" name="demeter ring">
@@ -76723,20 +76761,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="8"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
-		</attribute>
-	</item>
-	<item id="45698" article="an" name="demeter amulet">
-		<attribute key="primarytype" value="amulets and necklaces"/>
-		<attribute key="showAttributes" value="1"/>
-		<attribute key="absorbpercentphysical" value="12"/>
-		<attribute key="absorbpercentpoison" value="32"/>
-		<attribute key="skilldist" value="6"/>
-		<attribute key="armor" value="3"/>
-		<attribute key="weight" value="430"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="level" value="8"/>
-			<attribute key="slot" value="necklace"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
@@ -76798,6 +76822,17 @@ Granted by TibiaGoals.com"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+		<item id="45702" article="a" name="demeter backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="35"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 	<item id="45703" article="a" name="sekhmet helmet">
@@ -76887,15 +76922,26 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-		<item id="45716" article="a" name="sekhmet backpack">
-		<attribute key="primarytype" value="containers"/>
-		<attribute key="containersize" value="35"/>
-		<attribute key="weight" value="1800"/>
+	<item id="45707" article="a" name="sekhmet shield">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="absorbpercentphysical" value="15"/>
+		<attribute key="absorbpercentdeath" value="15"/>
+		<attribute key="defense" value="55"/>
+		<attribute key="weight" value="5800"/>
 		<attribute key="imbuementslot" value="1">
-			<attribute key="increase capacity" value="3"/>
+			<attribute key="elemental protection death" value="5"/>
+			<attribute key="elemental protection earth" value="5"/>
+			<attribute key="elemental protection fire" value="5"/>
+			<attribute key="elemental protection ice" value="5"/>
+			<attribute key="elemental protection energy" value="5"/>
+			<attribute key="elemental protection holy" value="5"/>
+			<attribute key="skillboost shielding" value="5"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="level" value="8"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="45708" article="an" name="sekhmet amulet">
@@ -77094,25 +77140,16 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-		<item id="45553" name="Dodge Potion">
-		<attribute key="primarytype" value="liquids"/>
-		<attribute key="description" value="This potion increase your dodge!."/>
-		<attribute key="weight" value="210"/>
-	</item>
-		<item id="45554" name="Critical Potion">
-		<attribute key="primarytype" value="liquids"/>
-		<attribute key="description" value="This potion increase your critical!."/>
-		<attribute key="weight" value="210"/>
-	</item>
-		<item id="45555" name="Reflect Potion">
-		<attribute key="primarytype" value="liquids"/>
-		<attribute key="description" value="This potion increase your reflect!."/>
-		<attribute key="weight" value="210"/>
-	</item>
-		<item id="45672" name="Power Potion">
-		<attribute key="primarytype" value="liquids"/>
-		<attribute key="description" value="This potion increase your Damage and Defense!."/>
-		<attribute key="weight" value="210"/>
+		<item id="45716" article="a" name="sekhmet backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="35"/>
+		<attribute key="weight" value="1800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
 	</item>
 	<item id="45734" article="a" name="boss token">
 		<attribute key="primarytype" value="valuables"/>

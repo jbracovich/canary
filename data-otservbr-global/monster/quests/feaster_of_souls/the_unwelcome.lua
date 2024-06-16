@@ -97,6 +97,7 @@ monster.loot = {
 	{ name = "spooky hood", chance = 150 },
 	{ name = "fabulous legs", chance = 150 },
 	{ name = "soulful legs", chance = 150 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

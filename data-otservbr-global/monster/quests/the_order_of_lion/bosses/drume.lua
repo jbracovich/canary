@@ -112,6 +112,7 @@ monster.loot = {
 	{ name = "giant sapphire", chance = 4217 },
 	{ name = "giant ruby", chance = 3012 },
 	{ name = "underworld rod", chance = 2410 },
+	{ name = "boss token", chance = 1000 },
 	{ name = "lion spangenhelm", chance = 300 },
 	{ name = "lion plate", chance = 300 },
 	{ name = "lion shield", chance = 300 },
@@ -123,6 +124,7 @@ monster.loot = {
 	{ name = "lion wand", chance = 300 },
 	{ name = "lion amulet", chance = 300 },
 	{ name = "lion rod", chance = 300 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

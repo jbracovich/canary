@@ -75,6 +75,7 @@ monster.loot = {
 	{ name = "silver hand mirror", chance = 150 },
 	{ name = "death toll", chance = 150 },
 	{ name = "pair of nightmare boots", chance = 150 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

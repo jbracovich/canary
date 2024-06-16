@@ -628,6 +628,7 @@ void LuaEnums::initConstMeEnums(lua_State* L) {
 	registerEnum(L, CONST_ME_BLUE_LINES);
 	registerEnum(L, CONST_ME_GHOST_CLAW);
 	registerEnum(L, CONST_ME_FOG);
+	registerEnum(L, CONST_ME_LEVEL);
 }
 
 void LuaEnums::initConstAniEnums(lua_State* L) {

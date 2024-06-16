@@ -94,6 +94,7 @@ monster.loot = {
 	{ name = "underworld rod", chance = 400 },
 	{ name = "wand of voodoo", chance = 400 },
 	{ name = "wolf backpack", chance = 250 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

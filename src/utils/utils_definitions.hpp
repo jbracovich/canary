@@ -244,6 +244,7 @@ enum MagicEffectClasses : uint16_t {
 	CONST_ME_BLUE_LINES = 260,
 	CONST_ME_GHOST_CLAW = 261,
 	CONST_ME_FOG = 262,
+	CONST_ME_LEVEL = 263,
 
 	CONST_ME_LAST
 };

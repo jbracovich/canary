@@ -78,6 +78,7 @@ monster.loot = {
 	{ name = "wand of cosmic energy", chance = 1000 },
 	{ name = "death toll", chance = 1000 },
 	{ name = "pair of nightmare boots", chance = 230 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

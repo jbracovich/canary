@@ -104,6 +104,7 @@ monster.loot = {
 	{ name = "cobra axe", chance = 100 },
 	{ name = "cobra rod", chance = 100 },
 	{ name = "cobra crest", chance = 100 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {

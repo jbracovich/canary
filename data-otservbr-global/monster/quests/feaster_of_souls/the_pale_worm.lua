@@ -103,6 +103,7 @@ monster.loot = {
 	{ name = "ghost backpack", chance = 150 },
 	{ id = 32621, chance = 400 }, -- Ring of souls
 	{ name = "soulful legs", chance = 150 },
+	{ name = "boss token", chance = 1000 },
 }
 
 monster.attacks = {
