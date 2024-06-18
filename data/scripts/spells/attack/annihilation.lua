@@ -8,7 +8,7 @@ combat:setParameter(COMBAT_PARAM_USECHARGES, 1)
 function onGetFormulaValues(player, skill, attack, factor)
 	local skillTotal = skill * attack
 	local levelTotal = player:getLevel() / 5
-	return -(((skillTotal * 0.17) + 13) + levelTotal) * 1.28, -(((skillTotal * 0.20) + 34) + levelTotal) * 1.28 -- TODO : Use New Real Formula instead of an %
+	return -(((skillTotal * 0.05) + 4) + levelTotal) * 1.02, -(((skillTotal * 0.06) + 10) + levelTotal) * 1.02
 end
 
 combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
@@ -21,7 +21,7 @@ end
 
 spell:group("attack")
 spell:id(62)
-spell:name("Annihilation")
+spell:name("Aniquilación")
 spell:words("exori gran ico")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_OR_RUNE)
 spell:impactSound(SOUND_EFFECT_TYPE_SPELL_ANNIHILATION)
@@ -37,3 +37,4 @@ spell:groupCooldown(4 * 1000)
 spell:needLearn(false)
 spell:vocation("knight;true", "elite knight;true")
 spell:register()
+

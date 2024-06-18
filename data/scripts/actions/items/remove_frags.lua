@@ -6,7 +6,7 @@ function removeFrags.onUse(player, item, fromPosition, target, toPosition, isHot
         return true
     end
     if not inPz then
-        removeFragsMessage(player, CONST_ME_POFF, "You can only use this in a protection zone.")
+        removeFragsMessage(player, CONST_ME_AGONY, "You can only use this in a protection zone.")
         return true
     end
     
@@ -16,5 +16,5 @@ function removeFrags.onUse(player, item, fromPosition, target, toPosition, isHot
     removefrags(player)
     return true
 end
-removeFrags:id(45540)
+removeFrags:id(46061)
 removeFrags:register()

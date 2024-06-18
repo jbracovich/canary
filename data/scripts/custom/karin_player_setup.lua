@@ -1,28 +1,23 @@
 Karin.PlayerSetup = {
     Test = false,
     Dodge = {
-        LimitUpgrade = 350,
+        LimitUpgrade = 500,
         UpgradePerUse = 1,
         Storage = 15000,
         ItemId = 45553,
     },
     Critical = {
-        PercentDamage = 35,
-        LimitUpgrade = 350,
+        PercentDamage = 60,
+        LimitUpgrade = 150,
         UpgradePerUse = 1,
         Storage = 15001,
         ItemId = 45554,
     },
     Reflect = {
-        LimitUpgrade = 350,
+        LimitUpgrade = 500,
         UpgradePerUse = 1,
         Storage = 15002,
         ItemId = 45555,
-    },
-    Buff = {  -- Nuevo bloque para Buff
-    DAMAGE_MULTIPLIER = 1.0,
-    DEFENSE_MULTIPLIER = 1.0,
-    Storage = 15006, -- Identificador de almacenamiento para el buff
     },
     VocationsBalance = {
         PVP = {
@@ -41,16 +36,16 @@ Karin.PlayerSetup = {
         },
         PVE = {
             DAMAGE = {
-                KNIGHT = 2.2,
+                KNIGHT = 2.5,
                 SORCERER = 2.5,
-                DRUID = 2.3,
-                PALADIN = 2.3,
+                DRUID = 2.5,
+                PALADIN = 2.5,
             },
             DEFENSE = {
-                KNIGHT = 2.5,
-                SORCERER = 2.0,
-                DRUID = 2.0,
-                PALADIN = 2.2,
+                KNIGHT = 1.5,
+                SORCERER = 1.5,
+                DRUID = 1.5,
+                PALADIN = 1.5,
             },
         }
     }
@@ -67,7 +62,7 @@ __PlayerSetupFunctions = {
         if critical and critical > 0 then
             local criticalChance = math.random(1, 1000)
             if self.Test then
-                player:sendTextMessage(MESSAGE_STATUS, 'Critical: ' .. critical .. " Critical Chance: " .. criticalChance)
+                player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, 'Critical: ' .. critical .. " Critical Chance: " .. criticalChance)
             end
             if criticalChance <= critical then
                 primaryDamage = primaryDamage + (primaryDamage * (self.Critical.PercentDamage / 100))
@@ -75,22 +70,20 @@ __PlayerSetupFunctions = {
             end
         end
 
-        -- Aplicar multiplicadores de daño según la vocación y el estado (PvP/PvE)
-        local damageMultiplier = player:getStorageValue(self.Buff.Storage) > 0 and self.Buff.DAMAGE_MULTIPLIER or 1.0
-
         if creature:isPaladin() then
-            primaryDamage = math.floor(primaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.PALADIN or self.VocationsBalance.PVE.DAMAGE.PALADIN)))
-            secondaryDamage = math.floor(secondaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.PALADIN or self.VocationsBalance.PVE.DAMAGE.PALADIN)))
+            primaryDamage = math.floor(primaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.PALADIN or self.VocationsBalance.PVE.DAMAGE.PALADIN)))
+            secondaryDamage = math.floor(secondaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.PALADIN or self.VocationsBalance.PVE.DAMAGE.PALADIN)))
         elseif creature:isSorcerer() then
-            primaryDamage = math.floor(primaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.SORCERER or self.VocationsBalance.PVE.DAMAGE.SORCERER)))
-            secondaryDamage = math.floor(secondaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.SORCERER or self.VocationsBalance.PVE.DAMAGE.SORCERER)))
+            primaryDamage = math.floor(primaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.SORCERER or self.VocationsBalance.PVE.DAMAGE.SORCERER)))
+            secondaryDamage = math.floor(secondaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.SORCERER or self.VocationsBalance.PVE.DAMAGE.SORCERER)))
         elseif creature:isDruid() then
-            primaryDamage = math.floor(primaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.DRUID or self.VocationsBalance.PVE.DAMAGE.DRUID)))
-            secondaryDamage = math.floor(secondaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.DRUID or self.VocationsBalance.PVE.DAMAGE.DRUID)))
+            primaryDamage = math.floor(primaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.DRUID or self.VocationsBalance.PVE.DAMAGE.DRUID)))
+            secondaryDamage = math.floor(secondaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.DRUID or self.VocationsBalance.PVE.DAMAGE.DRUID)))
         elseif creature:isKnight() then
-            primaryDamage = math.floor(primaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.KNIGHT or self.VocationsBalance.PVE.DAMAGE.KNIGHT)))
-            secondaryDamage = math.floor(secondaryDamage * damageMultiplier * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.KNIGHT or self.VocationsBalance.PVE.DAMAGE.KNIGHT)))
+            primaryDamage = math.floor(primaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.KNIGHT or self.VocationsBalance.PVE.DAMAGE.KNIGHT)))
+            secondaryDamage = math.floor(secondaryDamage * ((target:isPlayer() and self.VocationsBalance.PVP.DAMAGE.KNIGHT or self.VocationsBalance.PVE.DAMAGE.KNIGHT)))
         end
+
         
         return primaryDamage, secondaryDamage
     end,
@@ -119,27 +112,23 @@ __PlayerSetupFunctions = {
             end
         end
 
-        -- Aplicar multiplicadores de defensa según la vocación y el estado (PvP/PvE)
-        local defenseMultiplier = player:getStorageValue(self.Buff.Storage) > 0 and self.Buff.DEFENSE_MULTIPLIER or 1.0
-
         if creature:isPaladin() then
-            primaryDamage = math.floor(primaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.PALADIN or self.VocationsBalance.PVE.DEFENSE.PALADIN)))
-            secondaryDamage = math.floor(secondaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.PALADIN or self.VocationsBalance.PVE.DEFENSE.PALADIN)))
+            primaryDamage = math.floor(primaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.PALADIN or self.VocationsBalance.PVE.DEFENSE.PALADIN)))
+            secondaryDamage = math.floor(secondaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.PALADIN or self.VocationsBalance.PVE.DEFENSE.PALADIN)))
         elseif creature:isSorcerer() then
-            primaryDamage = math.floor(primaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.SORCERER or self.VocationsBalance.PVE.DEFENSE.SORCERER)))
-            secondaryDamage = math.floor(secondaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.SORCERER or self.VocationsBalance.PVE.DEFENSE.SORCERER)))
+            primaryDamage = math.floor(primaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.SORCERER or self.VocationsBalance.PVE.DEFENSE.SORCERER)))
+            secondaryDamage = math.floor(secondaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.SORCERER or self.VocationsBalance.PVE.DEFENSE.SORCERER)))
         elseif creature:isDruid() then
-            primaryDamage = math.floor(primaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.DRUID or self.VocationsBalance.PVE.DEFENSE.DRUID)))
-            secondaryDamage = math.floor(secondaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.DRUID or self.VocationsBalance.PVE.DEFENSE.DRUID)))
+            primaryDamage = math.floor(primaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.DRUID or self.VocationsBalance.PVE.DEFENSE.DRUID)))
+            secondaryDamage = math.floor(secondaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.DRUID or self.VocationsBalance.PVE.DEFENSE.DRUID)))
         elseif creature:isKnight() then
-            primaryDamage = math.floor(primaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.KNIGHT or self.VocationsBalance.PVE.DEFENSE.KNIGHT)))
-            secondaryDamage = math.floor(secondaryDamage * defenseMultiplier * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.KNIGHT or self.VocationsBalance.PVE.DEFENSE.KNIGHT)))
+            primaryDamage = math.floor(primaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.KNIGHT or self.VocationsBalance.PVE.DEFENSE.KNIGHT)))
+            secondaryDamage = math.floor(secondaryDamage * ((attacker:isPlayer() and self.VocationsBalance.PVP.DEFENSE.KNIGHT or self.VocationsBalance.PVE.DEFENSE.KNIGHT)))
         end
 
         return primaryDamage, primaryType, secondaryDamage, secondaryType
     end,
-    
-    onLogin = function(self, player)
+    onLogin = function (self, player)
         player:registerEvent('KarinHealth')
         player:registerEvent('KarinMana')
     end,
@@ -151,10 +140,12 @@ __PlayerSetupFunctions = {
     end
 }
 
+
 Karin.PlayerSetup = setmetatable(
     Karin.PlayerSetup,
     { __index = __PlayerSetupFunctions }
 )
+
 
 local KarinLogin = CreatureEvent("KarinLogin")
 
@@ -164,6 +155,7 @@ function KarinLogin.onLogin(player)
 end
 
 KarinLogin:register()
+
 
 local Karin_HealthChange = CreatureEvent("KarinHealth")
 
@@ -272,7 +264,7 @@ function ReflectItem.onUse(player, item, fromPosition, target, toPosition, isHot
         end
         player:setStorageValue(Karin.PlayerSetup.Reflect.Storage, currentReflect + Karin.PlayerSetup.Reflect.UpgradePerUse)
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have upgraded your reflect. [" .. currentReflect + Karin.PlayerSetup.Reflect.UpgradePerUse .. "/".. Karin.PlayerSetup.Reflect.LimitUpgrade .."]")
-        player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+        player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
     end
     return true
 end

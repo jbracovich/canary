@@ -235,9 +235,9 @@ function Player:onLookInBattleList(creature, distance)
 	end
 
 	if creature:isPlayer() then
-		local restores = creature:kv():get("bonus-level") or 0
-		if restores > 0 then
-			description = string.format("%s Level: %d.", description, restores)
+		local bonus = creature:kv():get("bonus-level") or 0
+		if bonus > 0 then
+			description = string.format("%s Level: %d.", description, bonus)
 		end
 	end
 

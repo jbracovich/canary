@@ -147,17 +147,17 @@ SupplyShopConfigTable = {
 
 SupplyShopConfig = {}
 for _, categoryTable in pairs(SupplyShopConfigTable) do
-	for _, itemTable in ipairs(categoryTable) do
-		table.insert(SupplyShopConfig, itemTable)
-	end
+    table.move(categoryTable, 1, #categoryTable, #SupplyShopConfig + 1, SupplyShopConfig)
 end
 
 function FindSupplyShopItem(itemName)
-	for _, item in ipairs(SupplyShopConfig) do
-		if string.starts(item.itemName:lower(), itemName:lower()) then
-			return item
-		end
-	end
+    local lowerItemName = itemName:lower()
+    for _, item in ipairs(SupplyShopConfig) do
+        if string.sub(item.itemName:lower(), 1, #lowerItemName) == lowerItemName then
+            return item
+        end
+    end
+    return nil  -- Retornar nil si no se encuentra ningún ítem
 end
 
 LootShopConfigTable = {
@@ -1578,39 +1578,36 @@ local garbage = {
 LootShopConfigTable["garbage"] = {}
 
 for _, itemNameOrId in ipairs(garbage) do
-	local item = ItemType(itemNameOrId)
-	if item and item:getId() > 0 then
-		local suplyShop = FindSupplyShopItem(item:getName())
-		local price = 1
-		if suplyShop then
-			price = math.ceil(suplyShop.buy / 3)
-		end
-		table.insert(LootShopConfigTable["garbage"], { itemName = item:getName(), clientId = item:getId(), sell = price })
-	end
+    local item = ItemType(itemNameOrId)
+    if item and item:getId() > 0 then
+        local suplyShop = FindSupplyShopItem(item:getName())
+        local price = suplyShop and math.ceil(suplyShop.buy / 3) or 1
+        table.insert(LootShopConfigTable["garbage"], { itemName = item:getName(), clientId = item:getId(), sell = price })
+    end
 end
 
 local lootPouchEntry = { itemName = "all loot in pouch", clientId = ITEM_GOLD_POUCH, sell = 1 }
 LootShopConfig = { lootPouchEntry }
 
 for category, items in pairs(LootShopConfigTable) do
-	for _, item in ipairs(items) do
-		table.insert(LootShopConfig, item)
-	end
-	table.insert(LootShopConfigTable[category], lootPouchEntry)
+    table.move(items, 1, #items, #LootShopConfig + 1, LootShopConfig)
+    table.insert(items, lootPouchEntry)
 end
 
 function FindLootShopCategory(categoryName)
-	for category, items in pairs(LootShopConfigTable) do
-		if string.starts(category:lower(), categoryName:lower()) then
-			return items
-		end
-	end
+    local lowerCategoryName = categoryName:lower()
+    for category, items in pairs(LootShopConfigTable) do
+        if string.sub(category:lower(), 1, #lowerCategoryName) == lowerCategoryName then
+            return items
+        end
+    end
 end
 
 function FindLootShopItem(itemName)
-	for _, item in ipairs(LootShopConfig) do
-		if string.starts(item.itemName:lower(), itemName:lower()) then
-			return item
-		end
-	end
+    local lowerItemName = itemName:lower()
+    for _, item in ipairs(LootShopConfig) do
+        if string.sub(item.itemName:lower(), 1, #lowerItemName) == lowerItemName then
+            return item
+        end
+    end
 end

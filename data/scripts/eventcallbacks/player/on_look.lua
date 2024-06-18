@@ -39,11 +39,6 @@ function callback.playerOnLook(player, thing, position, distance)
             Reflect = Reflect + currentReflect
         end
         description = description..'\n[Dodge: +' .. Dodge / 10 .. '%/'.. Karin.PlayerSetup.Reflect.LimitUpgrade / 10 .. '%]\n[Critical: +' .. Critical / 10 .. '%/'.. Karin.PlayerSetup.Reflect.LimitUpgrade / 10 .. '%]\n[Reflect: +' .. Reflect / 10 .. '%/'.. Karin.PlayerSetup.Reflect.LimitUpgrade / 10 ..'%]\n' 
-        -- Verificación y descripción del buff
-        local buffStatus = thing:getStorageValue(Karin.PlayerSetup.Buff.Storage)
-        if buffStatus > 0 then
-            description = description .. '\n[Server Buff: (Damage: ' .. Karin.PlayerSetup.Buff.DAMAGE_MULTIPLIER .. 'x, Defense: ' .. Karin.PlayerSetup.Buff.DEFENSE_MULTIPLIER .. 'x)]'
-        end
     else
         description = description .. thing:getDescription(distance)
         if thing:isMonster() then
