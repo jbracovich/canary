@@ -8139,14 +8139,10 @@
 			<attribute key="slot" value="ring"/>
 		</attribute>
 	</item>
-	<item id="3246" name="Draconia Boots">
-		<attribute key="description" value="(Fast Regeneration, Speed+50)"/>
+	<item id="3246" name="boots of waterwalking">
+		<attribute key="description" value="This item has 5 charges left"/>
 		<attribute key="weight" value="770"/>
-		<attribute key="manaticks" value="1000"/>
-		<attribute key="managain" value="60"/>
-		<attribute key="healthticks" value="2000"/>
-		<attribute key="healthgain" value="60"/>
-		<attribute key="speed" value="50"/>
+		<attribute key="charges" value="5"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
 		</attribute>
@@ -76316,6 +76312,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="absorbpercentice" value="12"/>
 		<attribute key="magiclevelpoints" value="4"/>
 		<attribute key="deathmagiclevelpoints" value="2"/>
+		<attribute key="manaticks" value="1500"/>
+		<attribute key="managain" value="60"/>
+		<attribute key="healthticks" value="1500"/>
+		<attribute key="healthgain" value="60"/>
 		<attribute key="speed" value="150"/>
 		<attribute key="armor" value="6"/>
 		<attribute key="weight" value="1900"/>
@@ -76503,6 +76503,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="absorbpercentphysical" value="4"/>
 		<attribute key="absorbpercentfire" value="12"/>
 		<attribute key="magiclevelpoints" value="4"/>
+		<attribute key="manaticks" value="1500"/>
+		<attribute key="managain" value="60"/>
+		<attribute key="healthticks" value="1500"/>
+		<attribute key="healthgain" value="60"/>
 		<attribute key="healingmagiclevelpoints" value="2"/>
 		<attribute key="speed" value="150"/>
 		<attribute key="armor" value="6"/>
@@ -76704,6 +76708,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="absorbpercentphysical" value="6"/>
 		<attribute key="skilldist" value="4"/>
 		<attribute key="speed" value="150"/>
+		<attribute key="manaticks" value="1500"/>
+		<attribute key="managain" value="60"/>
+		<attribute key="healthticks" value="1500"/>
+		<attribute key="healthgain" value="60"/>
 		<attribute key="armor" value="6"/>
 		<attribute key="weight" value="1300"/>
 		<attribute key="imbuementslot" value="1">
@@ -76711,7 +76719,7 @@ Granted by TibiaGoals.com"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
-			<attribute key="level" value="400"/>
+			<attribute key="level" value="8"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
@@ -76755,7 +76763,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="holymagiclevelpoints" value="2"/>
 		<attribute key="magiclevelpoints" value="3"/>
 		<attribute key="skilldist" value="6"/>
-		<attribute key="transformDeEquipTo" value="39180"/>
 		<attribute key="showattributes" value="1"/>
 		<attribute key="weight" value="85"/>
 		<attribute key="script" value="moveevent">
@@ -76910,6 +76917,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="skillclub" value="3"/>
 		<attribute key="skillaxe" value="3"/>
 		<attribute key="skillsword" value="3"/>
+		<attribute key="manaticks" value="1500"/>
+		<attribute key="managain" value="60"/>
+		<attribute key="healthticks" value="1500"/>
+		<attribute key="healthgain" value="60"/>
 		<attribute key="speed" value="150"/>
 		<attribute key="armor" value="8"/>
 		<attribute key="weight" value="1300"/>

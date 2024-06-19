@@ -5884,18 +5884,6 @@ GameStore.Categories = {
 			    home = true,
 			},
 			{
-				icons = { "Boots_Of_Waterwalking.png" },
-				name = "Draconia Boots",
-				price = 400,
-				itemtype = 3246,
-				count = 1,
-				description = "<i>These are boots with special features that you wont want to miss.</i>\n\n{info} It has Fast Regeneration of both health and mana.\n\n{info} It also increases your speed by 50.",
-				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
-				state = GameStore.States.STATE_NEW,
-			    home = true,
-				movable = true
-			},
-			{
 				icons = { "Teleport_Cube.png" },
 				name = "Teleport Citys",
 				price = 500,

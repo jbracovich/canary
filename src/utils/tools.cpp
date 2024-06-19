@@ -672,6 +672,8 @@ MagicEffectNames magicEffectNames = {
 	{ "orangeenergyspark", CONST_ME_ORANGE_ENERGY_SPARK },
 	{ "orangefireworks", CONST_ME_ORANGE_FIREWORKS },
 	{ "poff", CONST_ME_POFF },
+	{ "level", CONST_ME_LEVEL },
+	{ "agony", CONST_ME_AGONY },
 	{ "poison", CONST_ME_POISONAREA },
 	{ "purplenote", CONST_ME_SOUND_PURPLE },
 	{ "purpleenergy", CONST_ME_PURPLEENERGY },

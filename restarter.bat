@@ -6,7 +6,7 @@ echo :: =========================================
 echo ::
 echo ::
 :begin
-Canary.exe
+canary.exe
 echo ::
 echo :: =========================================
 echo :: --- Reiniciando ---

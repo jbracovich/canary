@@ -22,10 +22,10 @@ Karin.PlayerSetup = {
     VocationsBalance = {
         PVP = {
             DAMAGE = {
-                KNIGHT = 1.0,
-                SORCERER = 1.0,
-                DRUID = 1.0,
-                PALADIN = 1.0,
+                KNIGHT = 1.7,
+                SORCERER = 1.7,
+                DRUID = 1.7,
+                PALADIN = 1.7,
             },
             DEFENSE = {
                 KNIGHT = 1.0,
@@ -36,16 +36,16 @@ Karin.PlayerSetup = {
         },
         PVE = {
             DAMAGE = {
-                KNIGHT = 2.5,
-                SORCERER = 2.5,
-                DRUID = 2.5,
-                PALADIN = 2.5,
+                KNIGHT = 1.0,
+                SORCERER = 1.0,
+                DRUID = 1.0,
+                PALADIN = 1.0,
             },
             DEFENSE = {
-                KNIGHT = 1.5,
-                SORCERER = 1.5,
-                DRUID = 1.5,
-                PALADIN = 1.5,
+                KNIGHT = 1.0,
+                SORCERER = 1.0,
+                DRUID = 1.0,
+                PALADIN = 1.0,
             },
         }
     }
