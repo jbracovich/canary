@@ -1,5 +1,128 @@
 <?xml version="1.0"?>
 <monsters>
+	<monster centerx="1005" centery="505" centerz="6" radius="1">
+		<monster name="The Last Lore Keeper" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1013" centery="505" centerz="6" radius="1">
+		<monster name="Brain Head" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="514" centerz="6" radius="1">
+		<monster name="The Time Guardian" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="514" centerz="6" radius="1">
+		<monster name="Unaz The Mean" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="520" centerz="6" radius="1">
+		<monster name="Solid Frozen Horror" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="520" centerz="6" radius="1">
+		<monster name="Irgix The Flimsy" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="526" centerz="6" radius="1">
+		<monster name="Dragonking Zyrtarch" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="526" centerz="6" radius="1">
+		<monster name="Vok The Freakish" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="532" centerz="6" radius="1">
+		<monster name="Mounted Thorn Knight" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="532" centerz="6" radius="1">
+		<monster name="The Dread Maiden" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="968" centery="537" centerz="6" radius="1">
+		<monster name="King Zelos" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="974" centery="537" centerz="6" radius="1">
+		<monster name="Duke Krule" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="980" centery="537" centerz="6" radius="1">
+		<monster name="Sir Baeloc" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="986" centery="537" centerz="6" radius="1">
+		<monster name="Earl Osam" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="992" centery="537" centerz="6" radius="1">
+		<monster name="Lord Azaram" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="998" centery="537" centerz="6" radius="1">
+		<monster name="Count Vlarkorth" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1020" centery="537" centerz="6" radius="1">
+		<monster name="The Fear Feaster" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1026" centery="537" centerz="6" radius="1">
+		<monster name="The Pale Worm" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1032" centery="537" centerz="6" radius="1">
+		<monster name="Goshnar's Malice" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1038" centery="537" centerz="6" radius="1">
+		<monster name="Goshnar's Hatred" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1044" centery="537" centerz="6" radius="1">
+		<monster name="Goshnar's Spite" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1050" centery="537" centerz="6" radius="1">
+		<monster name="Goshnar's Cruelty" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="968" centery="546" centerz="6" radius="1">
+		<monster name="Gaffir" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="974" centery="546" centerz="6" radius="1">
+		<monster name="Custodian" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="980" centery="546" centerz="6" radius="1">
+		<monster name="Guard Captain Quaid" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="986" centery="546" centerz="6" radius="1">
+		<monster name="Scarlett Etzel" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="992" centery="546" centerz="6" radius="1">
+		<monster name="Lady Tenebris" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="998" centery="546" centerz="6" radius="1">
+		<monster name="Lloyd" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1020" centery="546" centerz="6" radius="1">
+		<monster name="Darkfang" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1026" centery="546" centerz="6" radius="1">
+		<monster name="Sharpclaw" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1032" centery="546" centerz="6" radius="1">
+		<monster name="Black Vixen" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1038" centery="546" centerz="6" radius="1">
+		<monster name="Shadowpelt" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1044" centery="546" centerz="6" radius="1">
+		<monster name="Goshnar's Megalomania" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1050" centery="546" centerz="6" radius="1">
+		<monster name="Goshnar's Greed" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="551" centerz="6" radius="1">
+		<monster name="Timira The Many-Headed" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="551" centerz="6" radius="1">
+		<monster name="Bloodback" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="557" centerz="6" radius="1">
+		<monster name="Magma Bubble" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="557" centerz="6" radius="1">
+		<monster name="The Primal Menace" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="563" centerz="6" radius="1">
+		<monster name="Kroazur" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1014" centery="563" centerz="6" radius="1">
+		<monster name="Drume" x="0" y="0" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="1004" centery="569" centerz="6" radius="1">
+		<monster name="Urmahlullu The Immaculate" x="0" y="0" z="6" spawntime="60" />
+	</monster>
 	<monster centerx="1009" centery="613" centerz="6" radius="1">
 		<monster name="Brimstone Bug" x="0" y="0" z="6" spawntime="60" />
 	</monster>

@@ -939,7 +939,7 @@ function SetInfluenced(monsterType, monster, player, influencedLevel)
 		return false
 	end
 	local influencedMonster = Monster(ForgeMonster:pickInfluenced())
-	-- If it's reached the limit, we'll remove one to add the new one.
+	  -- Si se ha alcanzado el límite, eliminamos uno para agregar el nuevo.
 	if ForgeMonster:exceededMaxInfluencedMonsters() then
 		if influencedMonster then
 			Game.removeInfluencedMonster(influencedMonster:getId())
@@ -949,6 +949,7 @@ function SetInfluenced(monsterType, monster, player, influencedLevel)
 	monster:setForgeStack(influencedLevel)
 end
 
+-- Función para obtener el tiempo en formato legible
 function getHours(seconds)
 	return math.floor((seconds / 60) / 60)
 end

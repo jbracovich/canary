@@ -36,6 +36,9 @@ local itemsTable = {
 		{ itemName = "strong health potion", clientId = 236, buy = 115 },
 		{ itemName = "strong mana potion", clientId = 237, buy = 93 },
 		{ itemName = "ultimate health potion", clientId = 7643, buy = 379 },
+		{ itemName = "ultimate mana potion", clientId = 23373, buy = 438 },
+		{ itemName = "ultimate spirit potion", clientId = 23374, buy = 438 },
+		{ itemName = "supreme health potion", clientId = 23375, buy = 625 },
 		{ itemName = "vial", clientId = 2874, sell = 5 },
 	},
 	["runes"] = {
@@ -60,6 +63,9 @@ local itemsTable = {
 		{ itemName = "stalagmite rune", clientId = 3179, buy = 12 },
 		{ itemName = "sudden death rune", clientId = 3155, buy = 135 },
 		{ itemName = "ultimate healing rune", clientId = 3160, buy = 175 },
+		{ itemName = "magic wall rune", clientId = 3180, buy = 116 },
+		{ itemName = "wild growth rune", clientId = 3156, buy = 160 },
+		{ itemName = "paralyze rune", clientId = 3165, buy = 700 },
 	},
 	["wands"] = {
 		{ itemName = "moonlight rod", clientId = 3070, buy = 1000 },
