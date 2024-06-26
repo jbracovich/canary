@@ -262,12 +262,12 @@ function onRecvbyte(player, msg, byte)
 	elseif byte == GameStore.RecivedPackets.C_BuyStoreOffer then
 		parseBuyStoreOffer(player:getId(), msg)
 	elseif byte == GameStore.RecivedPackets.C_OpenTransactionHistory then
-		parseOpenTransactionHistory(player:getId(), msg)
+		parseOpenTransactionHistory(player:getId(), msg, player)
 	elseif byte == GameStore.RecivedPackets.C_RequestTransactionHistory then
-		parseRequestTransactionHistory(player:getId(), msg)
+		parseRequestTransactionHistory(player:getId(), msg, player)
 	end
-
-	return true
+	
+	return true	
 end
 
 function parseTransferableCoins(playerId, msg)
@@ -546,18 +546,17 @@ function parseBuyStoreOffer(playerId, msg)
 	return true
 end
 
--- Both functions use same formula!
-function parseOpenTransactionHistory(playerId, msg)
-	local page = 1
-	GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE = msg:getByte()
-	sendStoreTransactionHistory(playerId, page, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
-	player:updateUIExhausted()
+function parseOpenTransactionHistory(playerId, msg, player)
+    local page = 1
+    GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE = msg:getByte()
+    sendStoreTransactionHistory(playerId, page, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
+    player:updateUIExhausted()
 end
 
-function parseRequestTransactionHistory(playerId, msg)
-	local page = msg:getU32()
-	sendStoreTransactionHistory(playerId, page + 1, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
-	player:updateUIExhausted()
+function parseRequestTransactionHistory(playerId, msg, player)
+    local page = msg:getU32()
+    sendStoreTransactionHistory(playerId, page + 1, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
+    player:updateUIExhausted()
 end
 
 local function getCategoriesRook()
