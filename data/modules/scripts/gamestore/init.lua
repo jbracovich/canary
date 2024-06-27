@@ -546,17 +546,28 @@ function parseBuyStoreOffer(playerId, msg)
 	return true
 end
 
-function parseOpenTransactionHistory(playerId, msg, player)
-    local page = 1
-    GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE = msg:getByte()
-    sendStoreTransactionHistory(playerId, page, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
-    player:updateUIExhausted()
+-- Both functions use same formula!
+function parseOpenTransactionHistory(playerId, msg)
+	local player = Player(playerId)
+	if not player then
+		return
+	end
+
+	local page = 1
+	GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE = msg:getByte()
+	sendStoreTransactionHistory(playerId, page, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
+	player:updateUIExhausted()
 end
 
-function parseRequestTransactionHistory(playerId, msg, player)
-    local page = msg:getU32()
-    sendStoreTransactionHistory(playerId, page + 1, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
-    player:updateUIExhausted()
+function parseRequestTransactionHistory(playerId, msg)
+	local player = Player(playerId)
+	if not player then
+		return
+	end
+
+	local page = msg:getU32()
+	sendStoreTransactionHistory(playerId, page + 1, GameStore.DefaultValues.DEFAULT_VALUE_ENTRIES_PER_PAGE)
+	player:updateUIExhausted()
 end
 
 local function getCategoriesRook()
