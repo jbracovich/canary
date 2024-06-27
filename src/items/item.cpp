@@ -128,16 +128,16 @@ void Item::addImbuement(uint8_t slot, uint16_t imbuementId, uint32_t duration) {
 }
 
 bool Item::hasImbuementCategoryId(uint16_t categoryId) const {
-	for (uint8_t slotid = 0; slotid < getImbuementSlot(); slotid++) {
-		ImbuementInfo imbuementInfo;
-		if (getImbuementInfo(slotid, &imbuementInfo)) {
-			if (const CategoryImbuement* categoryImbuement = g_imbuements().getCategoryByID(imbuementInfo.imbuement->getCategory());
-			    categoryImbuement->id == categoryId) {
-				return true;
-			}
-		}
-	}
-	return false;
+    for (uint8_t slotid = 0; slotid < getImbuementSlot(); slotid++) {
+        ImbuementInfo imbuementInfo;
+        if (getImbuementInfo(slotid, &imbuementInfo)) {
+            const auto& categoryImbuement = g_imbuements().getCategoryByID(imbuementInfo.imbuement->getCategory());
+            if (categoryImbuement && categoryImbuement->id == categoryId) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 std::shared_ptr<Container> Item::CreateItemAsContainer(const uint16_t type, uint16_t size) {
