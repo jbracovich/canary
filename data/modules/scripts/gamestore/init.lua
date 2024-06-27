@@ -262,9 +262,9 @@ function onRecvbyte(player, msg, byte)
 	elseif byte == GameStore.RecivedPackets.C_BuyStoreOffer then
 		parseBuyStoreOffer(player:getId(), msg)
 	elseif byte == GameStore.RecivedPackets.C_OpenTransactionHistory then
-		parseOpenTransactionHistory(player:getId(), msg, player)
+		parseOpenTransactionHistory(player:getId(), msg)
 	elseif byte == GameStore.RecivedPackets.C_RequestTransactionHistory then
-		parseRequestTransactionHistory(player:getId(), msg, player)
+		parseRequestTransactionHistory(player:getId(), msg)
 	end
 	
 	return true	
