@@ -73,19 +73,6 @@ function callback.playerOnLook(player, thing, position, distance)
             elseif transformDeEquipId ~= 0 then
                 description = string.format("%s\nTransforms to: %d (onDeEquip)", description, transformDeEquipId)
             end
-			local decayId = itemType:getDecayId()
-			if decayId ~= -1 then
-				description = string.format("%s\nDecays to: %d", description, decayId)
-			end
-		elseif thing:isCreature() then
-			local str, pId = "%s\n%s\nHealth: %d / %d"
-			if thing:isPlayer() and thing:getMaxMana() > 0 then
-				pId = string.format("Player ID: %i", thing:getGuid())
-				str = string.format("%s, Mana: %d / %d", str, thing:getMana(), thing:getMaxMana())
-			end
-			description = string.format(str, description, pId, thing:getHealth(), thing:getMaxHealth())
-		end
-
             local decayId = itemType:getDecayId()
             if decayId ~= -1 then
                 description = string.format("%s\nDecays to: %d", description, decayId)
@@ -124,12 +111,7 @@ function callback.playerOnLook(player, thing, position, distance)
     end
 
     player:sendTextMessage(MESSAGE_LOOK, description)
-			if thing:isPlayer() then
-				description = string.format("%s\nIP: %s", description, Game.convertIpToString(thing:getIp()))
-			end
-		end
-	end
-	player:sendTextMessage(MESSAGE_LOOK, description)
 end
 
 callback:register()
+
