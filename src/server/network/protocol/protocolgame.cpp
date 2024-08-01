@@ -473,7 +473,6 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 
 	// Extended opcodes
 	if (operatingSystem >= CLIENTOS_OTCLIENT_LINUX) {
-		isOTC = true;
 		NetworkMessage opcodeMessage;
 		opcodeMessage.addByte(0x32);
 		opcodeMessage.addByte(0x00);
@@ -924,8 +923,8 @@ void ProtocolGame::parsePacket(NetworkMessage &msg) {
 
 void ProtocolGame::parsePacketDead(uint8_t recvbyte) {
 	if (recvbyte == 0x14) {
-		// Remove player from game if click "ok" using otc
-		if (player && isOTC) {
+		// Remove player from game if click "ok" using otcv8
+		if (player && otclientV8 > 0) {
 			g_game().removePlayerUniqueLogin(player->getName());
 		}
 		disconnect();
@@ -1600,34 +1599,35 @@ void ProtocolGame::parseAutoWalk(NetworkMessage &msg) {
 		return;
 	}
 
-	std::vector<Direction> path;
-	path.resize(numdirs, DIRECTION_NORTH);
-	for (size_t i = numdirs; --i < numdirs;) {
-		const uint8_t rawdir = msg.getByte();
+	msg.skipBytes(numdirs);
+
+	stdext::arraylist<Direction> path;
+	for (uint8_t i = 0; i < numdirs; ++i) {
+		uint8_t rawdir = msg.getPreviousByte();
 		switch (rawdir) {
 			case 1:
-				path[i] = DIRECTION_EAST;
+				path.push_front(DIRECTION_EAST);
 				break;
 			case 2:
-				path[i] = DIRECTION_NORTHEAST;
+				path.push_front(DIRECTION_NORTHEAST);
 				break;
 			case 3:
-				path[i] = DIRECTION_NORTH;
+				path.push_front(DIRECTION_NORTH);
 				break;
 			case 4:
-				path[i] = DIRECTION_NORTHWEST;
+				path.push_front(DIRECTION_NORTHWEST);
 				break;
 			case 5:
-				path[i] = DIRECTION_WEST;
+				path.push_front(DIRECTION_WEST);
 				break;
 			case 6:
-				path[i] = DIRECTION_SOUTHWEST;
+				path.push_front(DIRECTION_SOUTHWEST);
 				break;
 			case 7:
-				path[i] = DIRECTION_SOUTH;
+				path.push_front(DIRECTION_SOUTH);
 				break;
 			case 8:
-				path[i] = DIRECTION_SOUTHEAST;
+				path.push_front(DIRECTION_SOUTHEAST);
 				break;
 			default:
 				break;
@@ -1638,7 +1638,7 @@ void ProtocolGame::parseAutoWalk(NetworkMessage &msg) {
 		return;
 	}
 
-	g_game().playerAutoWalk(player->getID(), path);
+	g_game().playerAutoWalk(player->getID(), path.data());
 }
 
 void ProtocolGame::parseSetOutfit(NetworkMessage &msg) {
@@ -2962,7 +2962,6 @@ void ProtocolGame::parseBestiarysendCreatures(NetworkMessage &msg) {
 		newmsg.add<uint16_t>(raceid_);
 
 		uint8_t progress = 0;
-		uint8_t occurrence = 0;
 		for (const auto &_it : creaturesKilled) {
 			if (_it.first == raceid_) {
 				const auto tmpType = g_monsters().getMonsterType(it_.second);
@@ -2970,13 +2969,11 @@ void ProtocolGame::parseBestiarysendCreatures(NetworkMessage &msg) {
 					return;
 				}
 				progress = g_iobestiary().getKillStatus(tmpType, _it.second);
-				occurrence = tmpType->info.bestiaryOccurrence;
 			}
 		}
 
 		if (progress > 0) {
-			newmsg.addByte(progress);
-			newmsg.addByte(occurrence);
+			newmsg.add<uint16_t>(static_cast<uint16_t>(progress));
 		} else {
 			newmsg.addByte(0);
 		}
@@ -4262,10 +4259,12 @@ void ProtocolGame::sendBasicData() {
 	msg.addByte(player->getVocation()->getClientId());
 
 	// Prey window
-	if (player->getVocation()->getId() == 0 && player->getGroup()->id < GROUP_TYPE_GAMEMASTER) {
-		msg.addByte(0);
-	} else {
-		msg.addByte(1); // has reached Main (allow player to open Prey window)
+	if (!oldProtocol) {
+		if (player->getVocation()->getId() == 0 && player->getGroup()->id < GROUP_TYPE_GAMEMASTER) {
+			msg.addByte(0);
+		} else {
+			msg.addByte(1); // has reached Main (allow player to open Prey window)
+		}
 	}
 
 	// Filter only valid ids

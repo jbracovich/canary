@@ -20,8 +20,6 @@ public:
 		registerMethod(L, "TalkAction", "register", TalkActionFunctions::luaTalkActionRegister);
 		registerMethod(L, "TalkAction", "separator", TalkActionFunctions::luaTalkActionSeparator);
 		registerMethod(L, "TalkAction", "getName", TalkActionFunctions::luaTalkActionGetName);
-		registerMethod(L, "TalkAction", "getDescription", TalkActionFunctions::luaTalkActionGetDescription);
-		registerMethod(L, "TalkAction", "setDescription", TalkActionFunctions::luaTalkActionSetDescription);
 		registerMethod(L, "TalkAction", "getGroupType", TalkActionFunctions::luaTalkActionGetGroupType);
 	}
 
@@ -32,7 +30,5 @@ private:
 	static int luaTalkActionRegister(lua_State* L);
 	static int luaTalkActionSeparator(lua_State* L);
 	static int luaTalkActionGetName(lua_State* L);
-	static int luaTalkActionGetDescription(lua_State* L);
-	static int luaTalkActionSetDescription(lua_State* L);
 	static int luaTalkActionGetGroupType(lua_State* L);
 };

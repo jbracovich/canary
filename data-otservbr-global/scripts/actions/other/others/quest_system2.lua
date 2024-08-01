@@ -1,9 +1,9 @@
 local config = {
-	[2285] = { -- The Djinn War Quest - lamp
+	[2285] = {
 		items = {
 			{ itemId = 3243 },
 		},
-		storage = Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03,
+		storage = Storage.DjinnWar.EfreetFaction.Mission03,
 		formerValue = 1,
 		newValue = 2,
 		needItem = { itemId = 3231 },
@@ -14,6 +14,12 @@ local config = {
 			{ itemId = 3205 },
 		},
 		storage = Storage.QuestChests.FamilyBrooch,
+	},
+	[3002] = {
+		items = {
+			{ itemId = 3030, count = 6 },
+		},
+		storage = Storage.QuestChests.SixRubiesQuest,
 	},
 	[3018] = {
 		items = {
@@ -35,7 +41,7 @@ local config = {
 		items = {
 			{ itemId = 3243 },
 		},
-		storage = Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03,
+		storage = Storage.DjinnWar.MaridFaction.Mission03,
 		formerValue = 1,
 		newValue = 2,
 		needItem = { itemId = 3231 },
@@ -100,11 +106,35 @@ local config = {
 		say = "A batch of documents has been stashed in the shelf. These might be of interest to Zalamon.",
 		effect = CONST_ME_POFF,
 	},
+	[3311] = {
+		items = {
+			{ itemId = 2970, actionId = 3301 },
+		},
+		storage = Storage.QuestChests.OutlawCampKey1,
+	},
+	[3312] = {
+		items = {
+			{ itemId = 2969, actionId = 3302 },
+		},
+		storage = Storage.QuestChests.OutlawCampKey2,
+	},
+	[3313] = {
+		items = {
+			{ itemId = 2970, actionId = 3303 },
+		},
+		storage = Storage.QuestChests.OutlawCampKey3,
+	},
 	[4010] = {
 		items = {
 			{ itemId = 4832 },
 		},
-		storage = Storage.Quest.U7_6.TheApeCity.HolyApeHair,
+		storage = Storage.TheApeCity.HolyApeHair,
+	},
+	[5556] = {
+		items = {
+			{ itemId = 3357 },
+		},
+		storage = Storage.GhostShipQuest,
 	},
 	[9136] = {
 		items = {
@@ -112,26 +142,33 @@ local config = {
 		},
 		storage = Storage.QuestChests.DeeperFibulaKey,
 	},
+	[9185] = {
+		items = {
+			{ itemId = 3017 },
+			{ itemId = 3030, count = 2 },
+			{ itemId = 3028, count = 3 },
+		},
+		storage = Storage.QuestChests.SilverBrooch,
+	},
 	[9226] = {
 		items = {
 			{ itemId = 3397 },
 		},
-		storage = Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc,
+		storage = Storage.SamsOldBackpack,
 		formerValue = 2,
 		newValue = 3,
 	},
-	-- Hydra Egg Quest
 	[9255] = {
 		items = {
 			{ itemId = 4839 },
 		},
-		storage = Storage.Quest.U7_6.HydraEggQuest,
+		storage = Storage.HydraEggQuest,
 	},
 	[9256] = {
 		items = {
 			{ itemId = 4829, decay = true },
 		},
-		storage = Storage.Quest.U7_6.TheApeCity.WitchesCapSpot,
+		storage = Storage.TheApeCity.WitchesCapSpot,
 		time = true,
 	},
 	[9259] = {
@@ -158,6 +195,12 @@ local config = {
 		},
 		storage = Storage.SecretService.RottenTree,
 	},
+	[50032] = {
+		items = {
+			{ itemId = 3734 },
+		},
+		storage = Storage.BloodHerbQuest,
+	},
 	[50112] = {
 		items = {
 			{ itemId = 3725, count = 10 },
@@ -178,6 +221,30 @@ local config = {
 		},
 		storage = 857440,
 	},
+	[65202] = {
+		items = {
+			{ itemId = 2969, actionId = 3610 },
+		},
+		storage = 857441,
+	},
+	[65204] = {
+		items = {
+			{ itemId = 3269, count = 1 },
+		},
+		storage = 857442,
+	},
+	[65205] = {
+		items = {
+			{ itemId = 3356, count = 1 },
+		},
+		storage = 857443,
+	},
+	[65206] = {
+		items = {
+			{ itemId = 3029, count = 4 },
+		},
+		storage = 857444,
+	},
 	[65207] = {
 		items = {
 			{ itemId = 3551, count = 1 },
@@ -190,11 +257,29 @@ local config = {
 		},
 		storage = 857446,
 	},
+	[65209] = {
+		items = {
+			{ itemId = 3054, count = 1 },
+		},
+		storage = 857447,
+	},
 	[65210] = {
 		items = {
 			{ itemId = 3147, count = 3 },
 		},
 		storage = 857448,
+	},
+	[65211] = {
+		items = {
+			{ itemId = 3028, count = 1 },
+		},
+		storage = 857449,
+	},
+	[65212] = {
+		items = {
+			{ itemId = 2969, actionId = 3667 },
+		},
+		storage = 857450,
 	},
 	[14037] = {
 		items = {
@@ -311,6 +396,12 @@ The map shows the original floor plan of this mine. You recognise your position 
 			},
 		},
 		storage = Storage.QuestChests.FormorgarMinesHoistSkeleton,
+	},
+	[20004] = {
+		items = {
+			{ itemId = 3266 },
+		},
+		storage = Storage.BattleAxeQuest,
 	},
 	[14041] = {
 		items = {

@@ -503,7 +503,6 @@ private:
 	bool oldProtocol = false;
 
 	uint16_t otclientV8 = 0;
-	bool isOTC = false;
 
 	void sendInventory();
 	void sendOpenStash();

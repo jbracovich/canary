@@ -34,4 +34,8 @@ CorpseUnique = {
 		itemId = 4285,
 		itemPos = { x = 32211, y = 31273, z = 10 },
 	},
+	[20004] = {
+		itemId = 4285,
+		itemPos = { x = 32305, y = 32254, z = 9 },
+	},
 }
