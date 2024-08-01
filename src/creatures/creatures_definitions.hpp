@@ -684,9 +684,9 @@ enum OperatingSystem_t : uint8_t {
 	CLIENTOS_OTCLIENT_LINUX = 10,
 	CLIENTOS_OTCLIENT_WINDOWS = 11,
 	CLIENTOS_OTCLIENT_MAC = 12,
-// Por defecto, OTCv8 utiliza CLIENTE_WINDOWS por compatibilidad hacia atrás
-// Para el valor correcto, habilita g_game.enableFeature(GameExtendedOpcode)
-// en modules/game_features/features.lua
+	// by default OTCv8 uses CLIENTOS_WINDOWS for backward compatibility
+	// for correct value enable g_game.enableFeature(GameExtendedOpcode)
+	// in modules/game_features/features.lua
 	CLIENTOS_OTCLIENTV8_LINUX = 20,
 	CLIENTOS_OTCLIENTV8_WINDOWS = 21,
 	CLIENTOS_OTCLIENTV8_MAC = 22,
